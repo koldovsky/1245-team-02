@@ -27,3 +27,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 * Bohdan Prystupchuk
 * Solomiia Hutovska
 * Andriy Kovalchuk
+* Bohdan Zhmyria
