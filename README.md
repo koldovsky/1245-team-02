@@ -25,3 +25,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 * Oleksandr Kornilenko
 * Alina Knysh
 * Bohdan Prystupchuk
+* Solomiia Hutovska
