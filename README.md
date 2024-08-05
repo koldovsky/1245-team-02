@@ -21,3 +21,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
     if (loadedPartialsCount === totalPartials) init();
 });
 ```
+* Mariia Yakoviv
