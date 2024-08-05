@@ -23,3 +23,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 ```
 * Mariia Yakoviv
 * Oleksandr Kornilenko
+* Alina Knysh
