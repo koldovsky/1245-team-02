@@ -26,3 +26,6 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 * Alina Knysh
 * Bohdan Prystupchuk
 * Solomiia Hutovska
+* Andriy Kovalchuk
+* Bohdan Zhmyria
+* Iryna Zozuliak
