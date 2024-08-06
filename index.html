@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Language school</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+        <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
+        <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header-hero.partial.html"></div>
+    </header>
+    <main>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.section-language.partial.html"></section>
 
-</body>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.section-help-you-learn.partial.html"></section>
+
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.section-services-we-provide.partial.html"></section>
+
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.section-we-offer.partial.html"></section>
+
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.section-students-about.partial.html"></section>
+
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.section-blog-news.partial.html"></section>
+    </main>
+    <footer>
+        <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer.partial.html"></nav>
+    </footer>
+  </body>
 </html>
