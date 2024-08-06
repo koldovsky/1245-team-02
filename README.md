@@ -29,3 +29,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 * Andriy Kovalchuk
 * Bohdan Zhmyria
 * Iryna Zozuliak
+* Serhii Orlov
