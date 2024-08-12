@@ -1,12 +1,14 @@
-@import "global.css";
-
 .blog {
     position: relative;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .blog__container {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .blog__header {
@@ -26,58 +28,114 @@
 }
 
 .blog__description {
-    margin: 25px;
+    margin-top: 25px;
     color: rgb(128, 131, 139);
     font-size: 19px;
 }
 
-
 .blog__news {
-    margin: 45px;
+    margin-top: 45px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
+.blog__news-container {
+    display: grid;
+    gap: 50px;
+}
+
+
 .blog__news-item {
-    width: 383px;
-    height: 617px;
-    padding: 15px 15px;
     display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
     flex-direction: column;
+    max-width: 389px;
 }
 
 .news__image {
-    height: 240px;
+    width: 359px;
+    height: 232px;
 }
 
-.news__information-item {
+.news__information {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 15px;
-    justify-content: flex-start;
+    margin-top: 20px;
 }
 
 .news__tag {
-    padding-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3e5496;
+    padding-right: 5px;
 }
 
-.news__information-caption {
+.news_caption {
+    content: "";
     display: block;
-    position: relative;
+    background-color: black;
     width: 1px;
-    align-self: stretch;
+    height: 19px;
+    margin-right: 5px;
 }
 
-.news__information-title {
+.news__date {
+    color: rgb(128, 131, 139);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.news__title {
+    color: #393B42;
     margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.news__information-description {
+.news__description {
     margin-top: 25px;
+    font-size: 17px;
+    color: rgb(133, 133, 133);
+    font-weight: 400;
+    margin-bottom: 35px;
 }
 
-.news__btn {
-    margin-top: 45px;
+.news__btn-group {
+    margin-top: 35px;
+    display: flex;
+}
+
+.news__btn-group--inner {
+    display: block;
+    width: auto;
+    margin: -10px;
+}
+
+.news__btn-button {
+    background-color: rgb(0, 197, 181);
+    margin: 10px;
+    border-radius: 8px;
+    padding: 40px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.news__btn-title {
+    color: white;
+    font-size: 14.3;
+    font-weight: bold;
+}
+
+@media (min-width: 890px) {
+    .blog__news-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1320px) {
+    .blog__news-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
