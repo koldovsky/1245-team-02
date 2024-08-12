@@ -34,4 +34,50 @@
 
 .blog__news {
     margin: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.blog__news-item {
+    width: 383px;
+    height: 617px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news__image {
+    height: 240px;
+}
+
+.news__information-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    justify-content: flex-start;
+}
+
+.news__tag {
+    padding-right: 10px;
+}
+
+.news__information-caption {
+    display: block;
+    position: relative;
+    width: 1px;
+    align-self: stretch;
+}
+
+.news__information-title {
+    margin-top: 15px;
+}
+
+.news__information-description {
+    margin-top: 25px;
+}
+
+.news__btn {
+    margin-top: 45px;
 }
