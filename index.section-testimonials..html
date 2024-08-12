@@ -1,81 +1,89 @@
 <section class="testimonials">
-    <div class="testimonials-header">
-        <h2>Our Students Say About Us<span>.</span></h2>
-        <p>We are extremely grateful for your feedback!</p>
+    <div class="testimonials__header">
+        <h2 class="testimonials__title">Our Students Say About Us<span class="testimonials__title-accent">.</span></h2>
+        <p class="testimonials__subtitle">We are extremely grateful for your feedback!</p>
     </div>
-    <div class="testimonials-item">
-        <div class="student">
-            <img class="student-image" src="img/testimonials/johanna-wolfurg.webp" width="100" height="100" alt="student johanna wolfurg">
-            <div class="student-name">
-                <p class="student-name-text">Johanna Wolfurg</p>
+    <div class="testimonials__carousel carousel">
+        <button class="carousel__button carousel__button--left">
+            <img class="carousel__button-icon" src="img/testimonials/left-button-icon.svg" alt="Previous">
+        </button>
+        <div class="carousel__items">
+            <div class="carousel__item student">
+                <img class="student__image" src="img/testimonials/johanna-wolfurg.webp" width="100" height="100" alt="student johanna wolfurg">
+                <div class="student__name">
+                    <p class="student__name-text">Johanna Wolfurg</p>
+                </div>
+                <div class="student__decorator">
+                    <img class="student__decorator-image" src="img/testimonials/decorator-line.svg" width="100" height="33" alt="decorator inner">
+                </div>
+                <div class="student__info">
+                    <p class="student__course">Student ( French for beginners)</p>
+                    <p class="student__feedback">"I really liked the variety. The best part was a video recording of students learning French and speaking to each other. A close second favorite was listening to audio recordings and choosing a response to what you've heard. Very thought out. I will definitely recommend your lessons to friends."</p>
+                    <p class="student__date">20 March 2022</p>
+                </div>
             </div>
-            <div class="decorator-inner">
-                <img src="img/testimonials/decorator-line.svg" width="100px" height="33" alt="decorator inner">
-            </div>
-            <div class="student-information">
-                <p>Student ( French for beginners)</p>
-                <p>"I really liked the variety. The best part was a video recording of students learning French and speaking to each other. A close second favorite was listening to audio recordings and choosing a response to what you've heard. Very thought out. I will definitely recommend your lessons to friends."</p>
-                <p class="date">20 March 2022</p>
-            </div>
-        </div>
 
-        <div class="student">
-            <img class="student-image" src="img/testimonials/mikael-higgins.webp" width="100" height="100" alt="student mikael higgins">
-            <div class="student-name">
-                <p class="student-name-text">Mikael Higgins</p>
+            <div class="carousel__item student">
+                <img class="student__image" src="img/testimonials/mikael-higgins.webp" width="100" height="100" alt="student mikael higgins">
+                <div class="student__name">
+                    <p class="student__name-text">Mikael Higgins</p>
+                </div>
+                <div class="student__decorator">
+                    <img class="student__decorator-image" src="/img/testimonials/decorator-line.svg" width="100" height="33" alt="decorator inner">
+                </div>
+                <div class="student__info">
+                    <p class="student__course">Student ( Chinese for beginners)</p>
+                    <p class="student__feedback">"I always wanted to learn Chinese but never had time for that. The offline course was a savior for me. I like that the course materials include text, audio, video, plus interactive exercises. Speaking with great teachers makes learning more fun. I recommend them and will continue my learning."</p>
+                    <p class="student__date">21 November 2022</p>
+                </div>
             </div>
-            <div class="decorator-inner">
-                <img src="/img/testimonials/decorator-line.svg" width="100px" height="33" alt="decorator inner">
-            </div>
-            <div class="student-information">
-                <p>Student ( Chineese for beginners)</p>
-                <p>"I always wanted to learn Chineese but never had time for that. The offline course was a savior for me. I like that the course materials include text, audio, video, plus interactive exercises. Speaking with great teachers makes learning more fun. I recommend them and will continue my learning."</p>
-                <p class="date">21 November 2022</p>
-            </div>
-        </div>
 
-        <div class="student">
-            <img class="student-image" src="img/testimonials/bradley-mills.webp" width="100" height="100" alt="student bradley mills">
-            <div class="student-name">
-                <p class="student-name-text">Bradley Mills</p>
-            </div>
-            <div class="decorator-inner">
-                <img src="img/testimonials/decorator-line.svg" width="100px" height="33" alt="decorator inner">
-            </div>
-            <div class="student-information">
-                <p>Student ( French intensive course)</p>
-                <p>"I have taken French lessons before both in a traditional class and via Skype. The online classroom at LinguaNow is on par with a regular classroom, but with the added benefit of having private lessons. Teachers are very friendly, and I know that teaching French can be just as irritating."</p>
-                <p class="date">10 march 2022</p>
+            <div class="carousel__item student">
+                <img class="student__image" src="img/testimonials/bradley-mills.webp" width="100" height="100" alt="student bradley mills">
+                <div class="student__name">
+                    <p class="student__name-text">Bradley Mills</p>
+                </div>
+                <div class="student__decorator">
+                    <img class="student__decorator-image" src="img/testimonials/decorator-line.svg" width="100" height="33" alt="decorator inner">
+                </div>
+                <div class="student__info">
+                    <p class="student__course">Student ( French intensive course)</p>
+                    <p class="student__feedback">"I have taken French lessons before both in a traditional class and via Skype. The online classroom at LinguaNow is on par with a regular classroom, but with the added benefit of having private lessons. Teachers are very friendly, and I know that teaching French can be just as irritating."</p>
+                    <p class="student__date">10 March 2022</p>
+                </div>
             </div>
         </div>
+        <button class="carousel__button carousel__button--right">
+            <img class="carousel__button-icon" src="img/testimonials/right-button-icon.svg" alt="Next">
+        </button>
     </div>
-    <div class="testimonials-footer">
-        <div class="media">
-            <img class="icon" src="img/testimonials/icon-language-tutors.svg" width="100" height="100" alt="icon language tutors">
-            <div class="list-with-media-content">
-                <p>25 <span>+</span></p>
-                <p>Language tutors</p>
+    <div class="testimonials__footer">
+        <div class="testimonials__media media">
+            <img class="media__icon" src="img/testimonials/icon-language-tutors.svg" width="100" height="100" alt="icon language tutors">
+            <div class="media__content">
+                <p class="media__value">25 <span class="media__value--accent">+</span></p>
+                <p class="media__description">Language tutors</p>
             </div>
         </div>
-        <div class="media">
-            <img class="icon" src="img/testimonials/icon-interactive-courses.svg" width="100" height="100" alt="interactive courses">
-            <div class="list-with-media-content">
-                <p>20 <span>+</span></p>
-                <p>Interactive courses</p>
+        <div class="testimonials__media media">
+            <img class="media__icon" src="img/testimonials/icon-interactive-courses.svg" width="100" height="100" alt="interactive courses">
+            <div class="media__content">
+                <p class="media__value">20 <span class="media__value--accent">+</span></p>
+                <p class="media__description">Interactive courses</p>
             </div>
         </div>
-        <div class="media">
-            <img class="icon" src="img/testimonials/icon-years-of-experience.svg" width="100" height="100" alt="years of experience">
-            <div class="list-with-media-content">
-                <p>10 <span>+</span></p>
-                <p>Years of experience</p>
+        <div class="testimonials__media media">
+            <img class="media__icon" src="img/testimonials/icon-years-of-experience.svg" width="100" height="100" alt="years of experience">
+            <div class="media__content">
+                <p class="media__value">10 <span class="media__value--accent">+</span></p>
+                <p class="media__description">Years of experience</p>
             </div>
         </div>
-        <div class="media">
-            <img class="icon" src="img/testimonials/icon-graduated-students.svg" width="100" height="100" alt="graduated students">
-            <div class="list-with-media-content">
-                <p>300 <span>+</span></p>
-                <p>Graduated students</p>
+        <div class="testimonials__media media">
+            <img class="media__icon" src="img/testimonials/icon-graduated-students.svg" width="100" height="100" alt="graduated students">
+            <div class="media__content">
+                <p class="media__value">300 <span class="media__value--accent">+</span></p>
+                <p class="media__description">Graduated students</p>
             </div>
         </div>
     </div>
