@@ -1,0 +1,37 @@
+@import "global.css";
+
+.blog {
+    position: relative;
+}
+
+.blog__container {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.blog__header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.blog__title {
+    font-size: 38px;
+    color: #393B42;
+    font-family: 'Poppins', sans-serif;
+    .dot {
+        color: #3e5496;
+    }
+}
+
+.blog__description {
+    margin: 25px;
+    color: rgb(128, 131, 139);
+    font-size: 19px;
+}
+
+
+.blog__news {
+    margin: 45px;
+}
