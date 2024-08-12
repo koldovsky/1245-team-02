@@ -1,0 +1,46 @@
+@import "global.css";
+
+.help {
+    position: relative;
+}
+
+.help__container {
+    padding: 90px 30px;
+    background-color: #3e5496;
+}
+
+.help__header {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.help__title {
+    font-size: 38px;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    .dot {
+        color: #00c5b5;
+    }
+}
+
+.help__description {
+    font-size: 19px;
+    color: rgb(248, 248, 248);
+    font-weight: 600;
+}
+
+.help_content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.help__text {
+    font-size: 17px;
+    color: rgb(203, 203, 203);
+    font-weight: 400;
+}
