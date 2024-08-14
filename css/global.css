@@ -13,6 +13,12 @@
     scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
+    --white: #ffffff;
+    --brand-color: #3e5496;
+    --accent-color: #00c5b5;
+    --base-text-color: #858585;
+    --dark-shade-color: #81838b;
+    --primary-dark-color: #393b42;
 }
 
 img {
