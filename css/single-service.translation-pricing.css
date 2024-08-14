@@ -28,5 +28,37 @@
                 }            
             }
         }
+        .tabs__content {
+            .tab__content {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                column-gap: 30px;
+                row-gap: 40px;
+                &.hidden {
+                    display: none;
+                }
+                .service__item {
+                    .price-wrapper {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: end;
+                        .price__decoration__line {
+                            height: 1px;
+                            width: 100%;
+                            background-color: var(--dark-shade-color);
+                            opacity: 0.2;
+                            flex: 1 1;
+                            margin: 6px 3px;
+                        }
+                        .price {
+                            color: var(--brand-color);
+                            font-size: 26px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
