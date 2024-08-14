@@ -120,6 +120,11 @@
     padding: 40px;
     padding-top: 17px;
     padding-bottom: 17px;
+    text-decoration: none;
+}
+
+.news__btn-button:hover{
+    background-color: #3e5496;
 }
 
 .news__btn-title {
