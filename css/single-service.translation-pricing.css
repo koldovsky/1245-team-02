@@ -1,0 +1,32 @@
+.translation-pricing {
+    .tabs-wrapper {
+        margin-top: 50px;
+        .tabs__labels {
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid var(--light-border-color);
+            margin-bottom: 30px;
+            .tab__label {
+                padding: 15px 20px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                font-size: 17px;
+                font-weight: 400;
+                color: var(--primary-dark-color);
+                &.tab__label--active {
+                    border-bottom: 2px solid var(--accent-color);
+                }
+                &.tab__label--disable {
+                    opacity: 0.5;
+                    &.tab__label--disable:hover {
+                        opacity: 1;
+                    }
+                }
+                .tab__img {
+                    width: 25px;
+                }            
+            }
+        }
+    }
+}
