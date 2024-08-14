@@ -1,6 +1,6 @@
 .testimonials{
     text-align: center;
-    background-color: white;
+    background-color: #f8f8f8;
     font-family: 'Poppins', sans-serif;
 }
 .testimonials__header{
@@ -30,12 +30,17 @@
     display: flex;
     align-items: center;
     margin-top: 45px;
+    background-color: white;
+}
+.student__info {
+    padding: 0 40px;
 }
 .student__image {
     width: 70px;
     height: 70px;
     border-radius: 100%;
     display: inline;
+    margin-top: 35px;
 }
 .student__name-text{
     color: rgb(62, 84, 150);
@@ -54,17 +59,21 @@
     color:rgb(128, 131, 139);
     font-size: 14px;
     font-weight:bold;
+    box-sizing: border-box;
 }
 .student__feedback{
     color:rgb(133, 133, 133);
     font-size: 17px;
     font-style: italic;
     font-weight:400;
+    margin-top: 25px;
 }
 .student__date{
     color:rgb(57, 59, 66);
     font-size: 14px;
     font-weight:bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .carousel__button-icon {
     position: absolute;
