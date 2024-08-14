@@ -3,9 +3,13 @@
         margin-top: 50px;
         .tabs__labels {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             border-bottom: 1px solid var(--light-border-color);
             margin-bottom: 30px;
+            overflow-y: visible;
+            overflow-x: auto;
+            white-space: nowrap;
+            scroll-behavior: smooth;
             .tab__label {
                 padding: 15px 20px;
                 display: flex;
@@ -31,10 +35,9 @@
         .tabs__content {
             .tab__content {
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                column-gap: 30px;
-                row-gap: 40px;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+                row-gap: 15px;
                 &.hidden {
                     display: none;
                 }
@@ -61,4 +64,23 @@
             }
         }
     }
+}
+
+@media (min-width: 768px) {
+    .translation-pricing {
+        .tabs-wrapper {
+            .tabs__labels {
+                justify-content: center;
+            }
+            .tabs__content {
+                .tab__content {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    column-gap: 30px;
+                    row-gap: 40px;
+                }
+            }
+        }
+    }       
 }
