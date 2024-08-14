@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: auto; 
+}
+
+.translation-interpreting {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.translation-interpreting-header {
+    text-align: center;
+    background-color: #3e5496;
+    padding: 50px 0 60px 0;
+    box-sizing: border-box;
+    height: 220.5px;
+}
+
+.translation-interpreting-title {
+    font-size: 50px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 700;
+}
+
+.translation-interpreting-breadcrumb {
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0;
+}
+
+.translation-interpreting-breadcrumb-page {
+    color: #00c5b5;
+    font-size: 15px;
+}
+
+.translation-interpreting-body {
+    padding: 90px 0 60px 0;
+}
+
+.translation-interpreting-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.translation-interpreting-image { 
+    padding: 0 15px 60px 15px;
+}
+
+.translation-interpreting-icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.translation-interpreting-icon-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.translation-interpreting-icon {
+    height: 24px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.translation-interpreting-icon-text {
+    font-size: 17px;
+}
+
+.translation-interpreting-text {
+    margin: 20px auto;
+}
+
+.translation-interpreting-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.translation-interpreting-column {
+    flex: 1;
+    max-width: 600px;
+    padding: 10px;
+    width: 100%;
+}
+
+.translation-interpreting-paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+    .translation-interpreting-grid {
+        flex-direction: row;
+    }
+
+    .translation-interpreting-column {
+        max-width: 421px;
+    }
+}
