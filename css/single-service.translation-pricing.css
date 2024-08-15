@@ -1,4 +1,18 @@
 .translation-pricing {
+    .section__title-wrapper {
+        text-align: center;
+        .title {
+            color: var(--primary-dark-color);
+            margin-bottom: 30px;
+            .period-sign {
+                color: var(--accent-color);
+            }
+        }
+        .subtitle {
+            color: var(--dark-shade-color);
+            font-size: 19px;
+        }
+    }
     .tabs-wrapper {
         margin-top: 50px;
         .tabs__labels {
@@ -46,6 +60,9 @@
                         display: flex;
                         justify-content: space-between;
                         align-items: end;
+                        .item__title {
+                            color: var(--primary-dark-color);
+                        }
                         .price__decoration__line {
                             height: 1px;
                             width: 100%;
@@ -54,16 +71,21 @@
                             flex: 1 1;
                             margin: 6px 3px;
                         }
-                        .price {
-                            color: var(--brand-color);
-                            font-size: 26px;
-                            font-weight: 600;
+                        .price-content {
+                            color: var(--base-text-color);
+                            font-size: 18px;
+                            font-weight: 600;                            
                         }
                     }
                 }
             }
         }
     }
+}
+
+.translation-pricing .price {
+    color: var(--brand-color);
+    font-size: 22px;
 }
 
 @media (min-width: 768px) {
@@ -78,9 +100,18 @@
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-rows: repeat(3, 1fr);
                     column-gap: 30px;
-                    row-gap: 40px;
+                    row-gap: 40px;                   
                 }
             }
         }
-    }       
+        .price {
+            font-size: 24px;
+        } 
+    }                          
+}
+
+@media (min-width: 992px) {
+    .translation-pricing .price {
+        font-size: 26px;
+    }  
 }
