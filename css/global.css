@@ -30,4 +30,23 @@ img {
 .container {
     max-width: 1200px;
     margin: auto;
+    padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 32px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        padding: 0 15px;
+    }
 }
