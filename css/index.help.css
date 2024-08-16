@@ -5,7 +5,7 @@
 
 .help__container {
     padding: 90px 30px;
-    background-color: #3e5496;
+    background-color: var(--brand-color);
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
     font-weight: 700;
     line-height: 45.6px;
     .dot {
-        color: #00c5b5;
+        color: var(--accent-color);
     }
 }
 
