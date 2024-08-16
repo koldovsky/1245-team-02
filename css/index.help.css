@@ -52,13 +52,14 @@
 }
 
 .help__button {
-    display: inline-block;
-    justify-content: left;
-    padding: 12px 20px;
-    border-radius: 10px;
-    background-color: var(--brand-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
     border: 2px solid var(--accent-color);
     width: 186.016px;
+    text-align: center;
+    height: 53.02px;
 }
 
 .help__link {
