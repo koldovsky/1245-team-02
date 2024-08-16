@@ -1,10 +1,7 @@
 .testimonials{
     text-align: center;
-    background-color: white;
+    background-color: #f8f8f8;
     font-family: 'Poppins', sans-serif;
-}
-.testimonials__header{
-    /*padding: 0 15px;*/
 }
 .testimonials__content{
     padding: 90px 24px 15px 24px;
@@ -24,26 +21,37 @@
     color: #80838b;
     text-align: center;
     margin-top: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 .carousel {
     position: relative;
     display: flex;
     align-items: center;
     margin-top: 45px;
+    background-color: white;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+.student__info {
+    padding: 0 40px;
 }
 .student__image {
     width: 70px;
     height: 70px;
     border-radius: 100%;
     display: inline;
+    margin-top: 35px;
 }
 .student__name-text{
+    font-size: 1.125rem;
     color: rgb(62, 84, 150);
     font-weight:bold;
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
 }
 .student__decorator{
     text-align: center;
-    /*box-sizing: border-box;*/
 }
 .student__decorator img {
     height: 33px;
@@ -51,20 +59,27 @@
     display: inline;
 }
 .student__course{
+    font-family: 'Open Sans', sans-serif;
     color:rgb(128, 131, 139);
     font-size: 14px;
     font-weight:bold;
+    box-sizing: border-box;
 }
 .student__feedback{
+    font-family: 'Open Sans', sans-serif;
     color:rgb(133, 133, 133);
     font-size: 17px;
     font-style: italic;
     font-weight:400;
+    margin-top: 25px;
 }
 .student__date{
-    color:rgb(57, 59, 66);
+    font-family: 'Open Sans', sans-serif;
+    color: #393B42;
     font-size: 14px;
     font-weight:bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .carousel__button-icon {
     position: absolute;
@@ -90,9 +105,76 @@
 .carousel__button--right {
     right: 12px;
 }
-.testimonials__media media{
+.testimonials__media {
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    padding: 0 15px;
+    padding: 30px 15px 20px 20px;
+    /*
+    padding: 0 15px;*/
+}
+
+.media__content{
+    display: inline;
+    width: 75%;
+}
+.media__description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #858585;
+    text-align: left;
+}
+.media__icon{
+    width: 50%;
+    display: inline;
+    margin-top: 15px;
+}
+.testimonials__image-tutors {
+    width: 50px;
+    height: 50px;
+    background-color: #e6e5ff;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+.testimonials__image-courses{
+    width: 50px;
+    height: 50px;
+    background-color: #dfffec;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+.testimonials__image-experience {
+    width: 50px;
+    height: 50px;
+    background-color: #fff4df;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+.testimonials__image-graduated{
+    width: 50px;
+    height: 50px;
+    background-color: #dff4ff;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+.media__value{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    text-align: left;
+    color: #393B42;
+}
+.media__value-tutors{
+    color: #a5a3ef;
+}
+.media__value-courses{
+    color: #00c5b5;
+}
+.media__value-experience{
+    color: #ffb83c ;
+}
+.media__value-graduated{
+    color: #79c9f9;
+}
+.media-last{
+    padding-bottom: 100px;
 }
