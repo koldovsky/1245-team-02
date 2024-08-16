@@ -5,7 +5,7 @@
 
 .help__container {
     padding: 90px 30px;
-    background-color: #3e5496;
+    background-color: var(--brand-color);
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -21,19 +21,19 @@
 .help__title {
     margin-bottom: 25px;
     font-size: 38px;
-    color: #FFF;
+    color: var(--white);
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     line-height: 45.6px;
     .dot {
-        color: #00c5b5;
+        color: var(--accent-color);
     }
 }
 
 .help__description {
     margin-bottom: 25px;
     font-size: 19px;
-    color: rgb(248, 248, 248);
+    color: var(--white);
     font-weight: 600;
 }
 
@@ -47,25 +47,26 @@
 .help__text {
     margin-bottom: 25px;
     font-size: 17px;
-    color: rgb(203, 203, 203);
+    color: var(--light-border-color);
     font-weight: 400;
 }
 
 .help__button {
-    display: inline-block;
-    justify-content: left;
-    padding: 12px 20px;
-    border-radius: 10px;
-    background-color: #3e5496;
-    border: 2px solid #00c5b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid var(--accent-color);
     width: 186.016px;
+    text-align: center;
+    height: 53.02px;
 }
 
 .help__link {
     display: block;
     font-size: 14.3px;
     font-weight: 700;
-    color: rgb(248, 248, 248);
+    color: var(--white);
     text-decoration: none;
     max-width: 100%;
 }
