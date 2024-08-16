@@ -1,1 +1,170 @@
 @import "global.css";
+
+
+.contacts {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: var(--light-accent-color);
+}
+
+.contacts__container {
+    display: flex;
+    padding-left: 24px;
+    padding-right: 24px;
+    flex-direction: column;
+}
+
+.contacts__form {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--white);
+}
+
+.contacts__form-container {
+    padding: 55px 39px 55px 39px;
+}
+
+.contacts__form-field {
+    margin-bottom: 24px;
+}
+
+.contacts__form-input, .contacts__form-select {
+    display: block;
+    background-color: var(--light-accent-color);
+    width: 100%;
+    margin-top: 12px;
+    font-family: inherit;
+    padding: 12px 21px 12px 21px;
+    font-size: 15px;
+    border-radius: 8px;
+    line-height: 1.2;
+    border: 0;
+}
+
+.contacts__form-input:focus, .contacts__form-select:focus {
+    outline: auto;
+    outline-color: #3b99fc;
+}
+
+.contacts__form-submit-btn {
+    width: 100%;
+    margin-top: 56px;
+    height: 41px;
+    background-color: var(--accent-color);
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    background-position: center;
+    overflow: visible;
+    cursor: pointer;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in, border-color 0.2s ease-in, box-shadow 0.2s ease-in;
+    word-wrap: break-word;
+    border: 0;
+    padding: 12px 21px 12px 21px;
+    border-radius: 8px;
+    line-height: 1.33;
+}
+
+.contacts__form-submit-btn-content {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts__form-text  {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+
+.contacts__faq {
+    margin-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contacts__faq-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__faq-title {
+    font-size: 38px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    .question-mark {
+        color: var(--accent-color);
+    }
+}
+
+.contacts__faq-subtitle {
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 19px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: rgb(128, 131, 139);
+}
+
+.accordion {
+    margin-top: 25px;
+}
+
+.accordion-item {
+    background-color: var(--light-accent-color);
+}
+
+.accordion-button {
+    padding: 20px 0;
+    background-color: var(--light-accent-color);
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.accordion-body {
+    background-color: var(--light-accent-color);
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: rgb(133, 133, 133);
+    padding: 0;
+    padding-bottom: 20px;
+    margin-top: 25px;
+}
+
+
+@media (min-width: 880px) {
+    .contacts__container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contacts__form {
+        padding-left: 40px;
+        padding-right: 40px;
+        max-width: 545px;
+    }
+
+    .contacts__form-container {
+        padding: 46px 70px 46px 70px;
+    }
+
+    .contacts__faq {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: 0;
+        max-width: 625px;
+    }
+
+    .contacts__form, .contacts__faq {
+        flex: 1;
+    }
+}
