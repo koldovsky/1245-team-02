@@ -12,10 +12,114 @@
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    gap: 40px;
 
 }
 
 .header__logo-container img {
     width: 200px;
     height: 37px;
+}
+
+.header__menu-link {
+    position: relative;
+    max-width: 100%;
+    color: #ffffff8c;
+    line-height: normal;
+    font-size: 15px;   
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.header__menu-link:hover {
+    color: #fff;
+    transition: 0.2s;
+}
+
+/* Стиль для підкреслення при наведенні */
+.underline-effect::after {
+    content: '';
+    position: absolute;
+    width: 120%; /* Ширина трохи більше тексту */
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -10px; /* З'являється на кілька пікселів нижче тексту */
+    left: -10%; /* Початок трохи зліва від тексту */
+    background-color: #fff; /* Блакитний колір */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.underline-effect:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.header__phone-image {
+    color: #00C5B5;
+}
+
+.header__phone-number {
+    color: #FFFF;
+    font-size: 15px; 
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width:992px) {
+    .hamburger  {
+      display: block;
+      cursor: pointer;
+      z-index: 1;
+    }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+  }
+  
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #2a3034;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .nav-bar.active {
+    height: 5600px;
+  }
+  
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  
+  .nav-bar li {
+    display: flex;
+   justify-content: center;
+  }
+  
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+  .nav__menu-link {
+    margin-bottom: 12px;
+    padding: 10px 25px;
+    margin: 0 5px;
+    color: #fefefe; 
+  }
 }
