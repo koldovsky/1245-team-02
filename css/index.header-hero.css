@@ -1,6 +1,5 @@
 .header__hero {
-  background: url('img/header/header-hero-background.jpg');
-  background: #3E5496;
+  background: url('/img/header/header-hero-background.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
