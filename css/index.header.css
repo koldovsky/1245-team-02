@@ -4,7 +4,7 @@
     justify-content:space-around;
     align-items: center;
     gap: 25px;
-    padding: 30px 15px;
+    padding: 30px 45px;
     background-color: #3E5496;
 }
 
@@ -13,7 +13,6 @@
     flex-direction: row;
     list-style-type: none;
     gap: 40px;
-
 }
 
 .header__logo-container img {
@@ -56,7 +55,6 @@
     transform-origin: bottom left;
 }
 
-
 .header__phone-image {
     color: #00C5B5;
 }
@@ -67,6 +65,11 @@
     text-decoration: none;
 }
 
+.header__nav-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
 
 @media only screen and (max-width:992px) {
     .hamburger  {
@@ -74,52 +77,55 @@
       cursor: pointer;
       z-index: 1;
     }
-  .hamburger .line {
-    width: 30px;
-    height: 3px;
-    background: #fefefe;
-    margin: 6px 0;
-  }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
   
-  .header__menu {
-    height: 0;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    background: #2a3034;
-    transition: 0.5s;
-    overflow: hidden;
-    z-index: 0;
-  }
+    .header__nav-bar {
+        height: 0;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #3E5496;
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 0;
+    }
   
-  .header__menu.active {
-    height: 5600px;
-  }
+    .header__nav-bar.active {
+        height: 5600px;
+    }
   
-  .header__menu ul {
-    display: block;
-    width: fit-content;
-    margin: 100px auto 0 auto;
-    text-align: center;
-    transition: 0.5s;
-    opacity: 0;
-  }
+    .header__nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 100px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
 
-  
-  .header__menu li {
-    display: flex;
-   justify-content: center;
-  }
-  
-  .header__menu.active ul {
-    opacity: 1;
-  }
-  .header__menu-link {
-    margin-bottom: 12px;
-    padding: 10px 25px;
-    margin: 0 5px;
-    color: #fefefe; 
-  }
+    .header__nav-bar li {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .header__nav-bar.active ul {
+        opacity: 1;
+    }
+    .header__menu-link {
+        margin-bottom: 12px;
+        padding: 10px 25px;
+        margin: 0 5px;
+        color: #fefefe; 
+    }
+
+    .header__phone {
+        display: none;
+    }
 }
