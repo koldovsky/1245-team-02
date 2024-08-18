@@ -65,6 +65,10 @@
     text-decoration: none;
 }
 
+.header__phone-number:hover {
+    text-decoration: underline;
+}
+
 .header__nav-bar {
     display: flex;
     flex-direction: row;
