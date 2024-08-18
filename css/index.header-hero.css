@@ -23,6 +23,12 @@
   }
 }
 
+@media only screen and (min-width: 991px) and (max-width: 1400px) {
+  .header__hero-size {
+      padding-left: 50px;
+  }
+}
+
 .header__hero-positions {
   display: flex;
   flex-direction: row;
