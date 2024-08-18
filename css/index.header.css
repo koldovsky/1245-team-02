@@ -79,8 +79,13 @@
     .hamburger  {
       display: block;
       cursor: pointer;
-      z-index: 1;
+      z-index: 2;
     }
+
+    .header__logo-container {
+        z-index: 2;
+    }
+
     .hamburger .line {
         width: 30px;
         height: 3px;
@@ -98,7 +103,7 @@
         background: #3E5496;
         transition: 0.5s;
         overflow: hidden;
-        z-index: 0;
+        z-index: 1;
     }
   
     .header__nav-bar.active {
