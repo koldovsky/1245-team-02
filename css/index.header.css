@@ -81,7 +81,7 @@
     margin: 6px 0;
   }
   
-  .nav-bar {
+  .header__menu {
     height: 0;
     position: absolute;
     top: 0px;
@@ -94,11 +94,11 @@
     z-index: 0;
   }
   
-  .nav-bar.active {
+  .header__menu.active {
     height: 5600px;
   }
   
-  .nav-bar ul {
+  .header__menu ul {
     display: block;
     width: fit-content;
     margin: 100px auto 0 auto;
@@ -108,15 +108,15 @@
   }
 
   
-  .nav-bar li {
+  .header__menu li {
     display: flex;
    justify-content: center;
   }
   
-  .nav-bar.active ul {
+  .header__menu.active ul {
     opacity: 1;
   }
-  .nav__menu-link {
+  .header__menu-link {
     margin-bottom: 12px;
     padding: 10px 25px;
     margin: 0 5px;
