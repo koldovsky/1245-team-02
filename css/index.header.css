@@ -1,0 +1,21 @@
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 15px;
+    background-color: #3E5496;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+}
+
+.header__logo-container img {
+    width: 200px;
+    height: 37px;
+}
