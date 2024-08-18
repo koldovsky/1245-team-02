@@ -1,0 +1,24 @@
+.school__features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+
+.school__feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: center; 
+}
+
+.school__dot {
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin-right: 8px;
+}
+
+@media (min-width: 600px) {
+    .school__features {
+        flex-direction: row; 
+}
