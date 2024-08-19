@@ -1,7 +1,14 @@
+.school__content-wrapper {
+    padding: 0px 24px;
+}
+
+
 .school__features {
     display: flex;
     flex-direction: column;
     justify-content: space-around; 
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .school__feature {
@@ -16,6 +23,35 @@
     height: 32px;
     display: block;
     margin-right: 8px;
+}
+
+
+.school__title-dot {
+    color: var(--small-dot-color);
+}
+
+.school__title{
+    color: var(--heading-color);
+    line-height: 45.6px;
+    margin-bottom: 20px;
+}
+
+.school__highlighted {
+    color: var(--paragraph-color);
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.school__highlighted-text{
+    margin-bottom: 20px;
+}
+
+.school__description, .school__summary {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 20px;
+    line-height: 25.5px;
 }
 
 @media (min-width: 600px) {

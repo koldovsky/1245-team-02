@@ -21,6 +21,10 @@
     --primary-dark-color: #393b42;
     --light-border-color: #e6e6e7;
     --light-accent-color: #f8f8f8;
+    --small-dot-color: #24c3b5;
+    --paragraph-color: #80838b;
+    --text-color: #858585;
+    --heading-color: #393b42;
 }
 
 h1 {
