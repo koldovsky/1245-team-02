@@ -1,0 +1,45 @@
+.language-section {
+    padding: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.language__info {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 156px;
+}
+
+.language__info h2 {
+    color: var(--primary-dark-color);
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.language__info span {
+    color: var(--brand-color);
+}
+
+.language__info p {
+    color: var(--dark-shade-color);
+    font-size: 19px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.flag_icons {
+    width: 25px;
+}
+
+
+.country_image {
+    padding: auto;
+}
+.language_icons {
+    width: 20px;
+}
