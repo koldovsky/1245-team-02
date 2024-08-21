@@ -10,7 +10,7 @@ hamburger.onclick = function () {
 
 //цей код працює добре
 // Отримання посилань меню
-var menuLinks = document.querySelectorAll('.nav__menu-link');
+var menuLinks = document.querySelectorAll('.header__menu-link');
 
 // Додавання обробника подій для кожного посилання
 menuLinks.forEach(function(link) {
