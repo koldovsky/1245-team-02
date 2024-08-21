@@ -35,7 +35,7 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs(dadYearsOld - sonYearsOld * 2);
 }
 
-Завдання 7:
+Завдання 7: https://www.codewars.com/kata/5933a1f8552bc2750a0000ed/train/javascript;
 Завдання 8:  https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript;
 function getRealFloor(n) {
   if (n === 0 || n === 1) {
