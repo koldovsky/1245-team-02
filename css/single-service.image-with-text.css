@@ -1,23 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-}
-
-img {
-    width: 100%;
-    height: auto; 
-}
-
 .translation-interpreting {
     padding: 0;
     margin: 0;
@@ -26,28 +6,35 @@ img {
 
 .translation-interpreting-header {
     text-align: center;
-    background-color: #3e5496;
+    background-color: var(--brand-color);
     padding: 50px 0 60px 0;
     box-sizing: border-box;
-    height: 220.5px;
+    
 }
 
 .translation-interpreting-title {
-    font-size: 50px;
-    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 38px;
+    color: var(--white);
     margin: 0;
     font-weight: 700;
+    box-sizing: border-box;
+    padding-left: 10px;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
 .translation-interpreting-breadcrumb {
-    color: #ffffff;
-    font-size: 15px;
+    color: var(--white);
+    font-size: 14px;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    white-space: normal;
 }
 
 .translation-interpreting-breadcrumb-page {
-    color: #00c5b5;
-    font-size: 15px;
+    color: var(--accent-color);
+    font-size: 14px;
 }
 
 .translation-interpreting-body {
@@ -63,22 +50,24 @@ img {
 }
 
 .translation-interpreting-image { 
-    padding: 0 15px 60px 15px;
+    padding: 90px 15px 0 15px;
 }
 
 .translation-interpreting-icon-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     gap: 10px;
     margin-top: 20px;
+    padding-left: 25px;
+    font-size: 17px;
 }
 
 .translation-interpreting-icon-item {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .translation-interpreting-icon {
@@ -89,6 +78,7 @@ img {
 
 .translation-interpreting-icon-text {
     font-size: 17px;
+    color: var(--dark-shade-color);
 }
 
 .translation-interpreting-text {
@@ -108,19 +98,50 @@ img {
     max-width: 600px;
     padding: 10px;
     width: 100%;
+    color: var(--base-text-color);
+    margin-left: 13px;
+    
 }
 
 .translation-interpreting-paragraph {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.6;
+    font-weight: 350;
 }
 
 @media (min-width: 768px) {
+    .translation-interpreting-title{
+        font-size: 44px;
+    }
     .translation-interpreting-grid {
         flex-direction: row;
     }
 
     .translation-interpreting-column {
         max-width: 421px;
+    }
+}
+@media (min-width: 992px){
+    .translation-interpreting-title{
+        font-size: 50px;
+    }
+}
+@media (min-width: 1200px) {
+    .translation-interpreting-icon-list{
+        justify-content: center;
+    }
+    .translation-interpreting-grid {
+        gap: 0;
+    }
+    .translation-interpreting-column {
+        flex: 1;
+        max-width: 600px;
+        padding: 10px;
+        width: 150%;
+        color: var(--base-text-color);
+        margin-left: 13px;
+    }
+    .translation-interpreting-paragraph {
+        font-size: 16px;
     }
 }
