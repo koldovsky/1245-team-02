@@ -4,10 +4,7 @@
 
 .language__info {
     display: block;
-    justify-content: center;
     text-align: center;
-    padding-left: 0;
-    padding-right: 0;
     height: 156px;
 }
 
@@ -34,7 +31,7 @@
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
-    padding: 5px;
+    justify-content: space-between;
     margin-bottom: 20px;
     border-bottom: 1px solid var(--light-border-color);
     color: var(--primary-dark-color);
@@ -47,6 +44,21 @@
     cursor: pointer;
     font-weight: 400;
     font-size: 16px;
+    transition: color 0.3s ease;
+
+    &.active {
+        border-bottom: 2px solid var(--accent-color);
+        border-radius: 2px;
+    }
+
+    &:not(.active) {
+        opacity: 0.7;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
 .flag_icons {
@@ -54,14 +66,11 @@
     margin-right: 15px;
 }
 
-.language-tab:active {
-    border-bottom: 2px solid var(--accent-color);
-}
-
 .language__cards-tab {
     display: grid;
     gap: 30px;
     margin-top: 40px;
+
     .language__cards-item {
         display: grid;
         align-items: auto;
@@ -72,11 +81,16 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
     height: auto;
+
     .custom-btn {
-      margin-top: auto;
+        margin-top: auto;
     }
+}
+
+.hidden {
+    display: none;
 }
 
 .country_image {
@@ -122,65 +136,65 @@
 }
 
 .custom-btn {
-  width: 150px;
-  height: 50px;
-  color: var(--white);
-  border-radius: 5px;
-  text-decoration: none;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  margin-top: auto;
-  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
-              7px 7px 20px 0px rgba(0,0,0,.1),
-              4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
-  text-align: center;
-  line-height: 50px;
+    width: 150px;
+    height: 50px;
+    color: var(--white);
+    border-radius: 5px;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    margin-top: auto;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    text-align: center;
+    line-height: 50px;
 }
 
 .page-link {
-  background-color: var(--brand-color);
-  background-image: linear-gradient(315deg, var(--brand-color) 0%, var(--btn-bg-gradient) 74%);
-  border: none;
+    background-color: var(--brand-color);
+    background-image: linear-gradient(315deg, var(--brand-color) 0%, var(--btn-bg-gradient) 74%);
+    border: none;
 }
 
 .page-link:hover {
-  background-color: var(--btn-hover-color);
-  background-image: linear-gradient(315deg, var(--btn-hover-color) 0%, var(--btn-hover-gradient) 74%);
+    background-color: var(--btn-hover-color);
+    background-image: linear-gradient(315deg, var(--btn-hover-color) 0%, var(--btn-hover-gradient) 74%);
 }
 
 .page-link:before,
 .page-link:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  top: 0;
-  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.9),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-              inset -4px -4px 6px 0 rgba(255,255,255,.9),
-              inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
-  transition: all 0.3s ease;
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .9),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .9),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
 }
 
 .page-link:before {
-  height: 0%;
-  width: .1px;
+    height: 0%;
+    width: .1px;
 }
 
 .page-link:after {
-  width: 0%;
-  height: .1px;
+    width: 0%;
+    height: .1px;
 }
 
 .page-link:hover:before {
-  height: 100%;
+    height: 100%;
 }
 
 .page-link:hover:after {
-  width: 100%;
+    width: 100%;
 }
 
 
@@ -188,21 +202,23 @@
     .language-tabs-container {
         justify-content: center;
     }
-    
+
     .language__cards-tab {
         grid-template-columns: 1fr 1fr;
         margin-top: 40px;
     }
+
     .course__title {
         font-size: 24px;
     }
+
     .icon-container {
-      font-size: 15px;
+        font-size: 15px;
     }
 }
 
 @media (min-width: 900px) {
-  
+
     .language__cards-tab {
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 40px;
