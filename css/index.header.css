@@ -1,67 +1,67 @@
 .header__nav {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     gap: 25px;
     padding: 30px 45px;
-    background-color: #3E5496;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 601px) {
+    background-color: #3e5496;
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 601px) {
     .header__nav {
-        flex-direction: row;
-    justify-content:space-between;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
   
   @media only screen and (min-width: 601px) and (max-width: 991px) {
     .header__nav {
-        flex-direction: row;
-        justify-content:space-between;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
-
+  
   @media only screen and (min-width: 1400px) and (max-width: 2600px) {
     .header__nav {
-        flex-direction: row;
-        justify-content: center;
-        gap: 185px;
+      flex-direction: row;
+      justify-content: center;
+      gap: 185px;
     }
   }
-
-.header__menu {
+  
+  .header__menu {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     gap: 40px;
-}
-
-.header__logo-container img {
+  }
+  
+  .header__logo-container img {
     width: 200px;
     height: 37px;
-}
-
-.header__menu-link {
+  }
+  
+  .header__menu-link {
     position: relative;
     max-width: 100%;
     color: #ffffff8c;
     line-height: normal;
-    font-size: 15px;   
+    font-size: 15px;
     font-weight: 600;
     font-style: normal;
     text-decoration: none;
     text-transform: none;
-}
-
-.header__menu-link:hover {
+  }
+  
+  .header__menu-link:hover {
     color: #fff;
     transition: 0.2s;
-}
-
-/* Стиль для підкреслення при наведенні */
-.underline-effect::after {
-    content: '';
+  }
+  
+  /* Стиль для підкреслення при наведенні */
+  .underline-effect::after {
+    content: "";
     position: absolute;
     width: 120%; /* Ширина трохи більше тексту */
     transform: scaleX(0);
@@ -71,92 +71,93 @@
     background-color: #fff; /* Блакитний колір */
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-}
-.underline-effect:hover::after {
+  }
+  .underline-effect:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
-
-.header__phone-image {
-    color: #00C5B5;
-}
-
-.header__phone-number {
-    color: #FFFF;
-    font-size: 15px; 
+  }
+  
+  .header__phone-image {
+    color: #00c5b5;
+  }
+  
+  .header__phone-number {
+    color: #ffff;
+    font-size: 15px;
     text-decoration: none;
-}
-
-.header__phone-number:hover {
+  }
+  
+  .header__phone-number:hover {
     text-decoration: underline;
-}
-
-.header__nav-bar {
+  }
+  
+  .header__nav-bar {
     display: flex;
     flex-direction: row;
     gap: 30px;
-}
-
-@media only screen and (max-width:992px) {
-    .hamburger  {
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .hamburger {
       display: block;
       cursor: pointer;
       z-index: 2;
     }
-
+  
     .header__logo-container {
-        z-index: 2;
+      z-index: 2;
     }
-
+  
     .hamburger .line {
-        width: 30px;
-        height: 3px;
-        background: #fefefe;
-        margin: 6px 0;
+      width: 30px;
+      height: 3px;
+      background: #fefefe;
+      margin: 6px 0;
     }
   
     .header__nav-bar {
-        height: 0;
-        position: absolute;
-        top: 0px;
-        left: 0;
-        right: 0;
-        width: 100vw;
-        background: #3E5496;
-        transition: 0.5s;
-        overflow: hidden;
-        z-index: 1;
+      height: 0;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background: #3e5496;
+      transition: 0.5s;
+      overflow: hidden;
+      z-index: 1;
     }
   
     .header__nav-bar.active {
-        height: 5600px;
+      height: 5600px;
     }
   
     .header__nav-bar ul {
-        display: block;
-        width: fit-content;
-        margin: 100px auto 0 auto;
-        text-align: center;
-        transition: 0.5s;
-        opacity: 0;
+      display: block;
+      width: fit-content;
+      margin: 100px auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+      opacity: 0;
     }
-
+  
     .header__nav-bar li {
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
     }
-    
+  
     .header__nav-bar.active ul {
-        opacity: 1;
+      opacity: 1;
     }
     .header__menu-link {
-        margin-bottom: 12px;
-        padding: 10px 25px;
-        margin: 0 5px;
-        color: #fefefe; 
+      margin-bottom: 12px;
+      padding: 10px 25px;
+      margin: 0 5px;
+      color: #fefefe;
     }
-
+  
     .header__phone {
-        display: none;
+      display: none;
     }
-}
+  }
+  

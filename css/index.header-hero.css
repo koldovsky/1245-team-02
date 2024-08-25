@@ -1,5 +1,5 @@
 .header__hero {
-  background: url('../img/header/header-hero-background.jpg');
+  background: url("../img/header/header-hero-background.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -16,16 +16,16 @@
 
 @media only screen and (min-width: 601px) and (max-width: 991px) {
   .header__hero-size {
-      margin-top: 200px;
-      margin-bottom: 200px;
-      padding-left: 15px;
-      padding-right: 15px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1400px) {
   .header__hero-size {
-      padding-left: 50px;
+    padding-left: 50px;
   }
 }
 
@@ -39,8 +39,8 @@
 
 @media only screen and (min-width: 320px) and (max-width: 991px) {
   .header__hero-positions {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -50,19 +50,19 @@
 
 @media only screen and (min-width: 320px) and (max-width: 601px) {
   .header__hero-elements {
-      width: 320px;
+    width: 320px;
   }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 991px) {
   .header__hero-elements {
-      width: 530px;
+    width: 530px;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 601px) {
   .header__hero-elements h1 {
-      font-size: 54px;
+    font-size: 54px;
   }
 }
 
@@ -71,7 +71,7 @@
 }
 
 .header__hero-elements span {
-  color: #00C5B5;
+  color: #00c5b5;
 }
 
 .header__hero-elements p {
@@ -93,8 +93,6 @@
   }
 }
 
- 
-
 .header__hero-links {
   width: 1190px;
   margin-top: 45px;
@@ -105,10 +103,10 @@
 
 @media only screen and (min-width: 320px) and (max-width: 601px) {
   .header__hero-links {
-      width: 320px;
-      display: flex;
-      flex-direction: column;
-      gap: 25px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
 }
 
@@ -116,7 +114,7 @@
   width: 208px;
   padding: 18px 0;
   text-align: center;
-  background: #00C5B5;
+  background: #00c5b5;
   color: #fff;
   font-size: 14px;
   border-radius: 10px;
@@ -125,11 +123,11 @@
 
 .header__contacts-link:hover {
   background: #fff;
-  color: #393B42;
+  color: #393b42;
   transition: 0.5s;
 }
 
-.header__blog-link {  
+.header__blog-link {
   width: 208px;
   position: relative;
   display: flex;
@@ -170,10 +168,10 @@
 
 .button_text_one_fo:hover {
   text-decoration: underline;
-} 
+}
 
 @media only screen and (max-width: 992px) {
   .button__inner_2of {
-      z-index: 0;
+    z-index: 0;
   }
 }
