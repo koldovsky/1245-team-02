@@ -1,0 +1,230 @@
+.language-section {
+    padding: 90px 0px;
+}
+
+.language__info {
+    display: block;
+    text-align: center;
+    height: 156px;
+}
+
+.language__info h2 {
+    color: var(--primary-dark-color);
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.language__info span {
+    color: var(--brand-color);
+}
+
+.language__info p {
+    color: var(--dark-shade-color);
+    font-size: 19px;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.language-tabs-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--light-border-color);
+    color: var(--primary-dark-color);
+}
+
+.language-tab {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s ease;
+
+    &.active {
+        border-bottom: 2px solid var(--accent-color);
+        border-radius: 2px;
+    }
+
+    &:not(.active) {
+        opacity: 0.7;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.flag_icons {
+    width: 25px;
+    margin-right: 15px;
+}
+
+.language__cards-tab {
+    display: grid;
+    gap: 30px;
+    margin-top: 40px;
+
+    .language__cards-item {
+        display: grid;
+        align-items: auto;
+    }
+}
+
+.language__cards-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    height: auto;
+
+    .custom-btn {
+        margin-top: auto;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.country_image {
+    padding: auto;
+}
+
+.course__price {
+    color: var(--brand-color);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.course__title {
+    color: var(--primary-dark-color);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.language__cards-item p {
+    font-weight: 400;
+    color: var(--text-color);
+    font-size: 17px;
+    line-height: 1.5;
+    filter: contrast(0.7);
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 40px;
+
+    .language_icons {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    span {
+        margin-right: 20px;
+        opacity: 0.6;
+    }
+}
+
+.custom-btn {
+    width: 150px;
+    height: 50px;
+    color: var(--white);
+    border-radius: 5px;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    margin-top: auto;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+.page-link {
+    background-color: var(--brand-color);
+    background-image: linear-gradient(315deg, var(--brand-color) 0%, var(--btn-bg-gradient) 74%);
+    border: none;
+}
+
+.page-link:hover {
+    background-color: var(--btn-hover-color);
+    background-image: linear-gradient(315deg, var(--btn-hover-color) 0%, var(--btn-hover-gradient) 74%);
+}
+
+.page-link:before,
+.page-link:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .9),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .9),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
+}
+
+.page-link:before {
+    height: 0%;
+    width: .1px;
+}
+
+.page-link:after {
+    width: 0%;
+    height: .1px;
+}
+
+.page-link:hover:before {
+    height: 100%;
+}
+
+.page-link:hover:after {
+    width: 100%;
+}
+
+
+@media (min-width: 600px) {
+    .language-tabs-container {
+        justify-content: center;
+    }
+
+    .language__cards-tab {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 40px;
+    }
+
+    .course__title {
+        font-size: 24px;
+    }
+
+    .icon-container {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .language__cards-tab {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 40px;
+    }
+
+    .course__title {
+        font-size: 26px;
+    }
+}

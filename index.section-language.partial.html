@@ -1,225 +1,266 @@
-<section class="language-section">
-    <div class="languages">
+<section class="language-section" id="languages">
+    <div class="languages container">
         <div class="language__info">
             <h2>Languages<span>.</span></h2>
             <p>We offer classes in five languages for different levels and purposes.</p>
         </div>
-        <div class="language__courses">
-            <div class="language-tabs">
-                <div class="ukrainian-tab">
-                    <img src="img/language/flags/ukrainian-flag.svg" alt="Ukrainian Flag" width="30">
+        <div class="language__courses-container">
+            <div class="language-tabs-container">
+                <div class="language-tab active" onclick="showTab(0)">
+                    <img src="img/language/flags/ukrainian-flag.svg" alt="Ukrainian Flag" class="flag_icons">
                     <span>Ukrainian</span>
                 </div>
-                <div class="french-tab">
-                    <img src="img/language/flags/french-flag.svg" alt="French Flag" width="30">
+                <div class="language-tab" onclick="showTab(1)">
+                    <img src="img/language/flags/french-flag.svg" alt="French Flag" class="flag_icons">
                     <span>French</span>
                 </div>
-                <div class="spanish-tab">
-                    <img src="img/language/flags/spanish-flag.svg" alt="Spanish Flag" width="30">
+                <div class="language-tab" onclick="showTab(2)">
+                    <img src="img/language/flags/spanish-flag.svg" alt="Spanish Flag" class="flag_icons">
                     <span>Spanish</span>
                 </div>
-                <div class="chinese-tab">
-                    <img src="img/language/flags/chinese-flag.svg" alt="Chinese Flag" width="30">
+                <div class="language-tab" onclick="showTab(3)">
+                    <img src="img/language/flags/chinese-flag.svg" alt="Chinese Flag" class="flag_icons">
                     <span>Chinese</span>
                 </div>
-                <div class="english-tab">
-                    <img src="img/language/flags/english-flag.svg" alt="English Flag" width="30">
+                <div class="language-tab" onclick="showTab(4)">
+                    <img src="img/language/flags/english-flag.svg" alt="English Flag" class="flag_icons">
                     <span>English</span>
                 </div>
             </div>
-            <div class="language__cards">
+            <div class="language__cards-container">
                 <div class="language__cards-tab">
                     <article class="language__cards-item">
-                        <img src="img/language/ukrainian/ukrainian-for-beginners.png" alt="Ukrainian for Beginners">
-                        <span>$120 / month</span>
-                        <h3>Ukrainian for Beginners</h3>
+                        <img src="img/language/ukrainian/ukrainian-for-beginners.png" alt="Ukrainian for Beginners"
+                            class="country__image">
+                        <span class="course__price">$120 / month</span>
+                        <h3 class="course__title">Ukrainian for Beginners</h3>
                         <p>Want to learn Ukrainian but don't know where to start? We offer a beginner Ukrainian
                             course with experienced teachers.</p>
-                        <img src="img/language/lessons-icon.svg" alt="Lessons Icon" width="20">
-                        <span>16 Lessons</span>
-                        <img src="img/language/students-icon.svg" alt="Students Icon" width="20">
-                        <span>20 Students</span>
-                        <a href="contacts.html">Enrol now</a>
+                        <div class="icon-container">
+                            <img src="img/language/lessons-icon.svg" alt="Lessons Icon" class="language_icons">
+                            <span>16 Lessons</span>
+                            <img src="img/language/students-icon.svg" alt="Students Icon" class="language_icons">
+                            <span>20 Students</span>
+                        </div>
+                        <a href="contacts.html" class="custom-btn page-link">Enrol now</a>
                     </article>
                     <article class="language__cards-item">
                         <img src="img/language/ukrainian/ukrainian-intermediate-level.png"
-                            alt="Ukrainian Intermediate Level">
-                        <span>$140 / month</span>
-                        <h3>Intermediate Level</h3>
+                            alt="Ukrainian Intermediate Level" class="country__image">
+                        <span class="course__price">$140 / month</span>
+                        <h3 class="course__title">Intermediate Level</h3>
                         <p>We pay more attention to grammar and pronunciation in this course and speak a lot to
                             break the language barrier.</p>
-                        <img src="img/language/lessons-icon.svg" alt="Lessons Icon" width="20">
-                        <span>26 Lessons</span>
-                        <img src="img/language/students-icon.svg" alt="Students Icon" width="20">
-                        <span>20 Students</span>
-                        <a href="contacts.html">Enrol now</a>
+                        <div class="icon-container">
+                            <img src="img/language/lessons-icon.svg" alt="Lessons Icon" class="language_icons">
+                            <span>26 Lessons</span>
+                            <img src="img/language/students-icon.svg" alt="Students Icon" class="language_icons">
+                            <span>20 Students</span>
+                        </div>
+                        <a href="contacts.html" class="custom-btn page-link">Enrol now</a>
                     </article>
                     <article class="language__cards-item">
                         <img src="img/language/ukrainian/intensive-ukrainian-course.png"
-                            alt="Intensive Ukrainian Course">
-                        <span>$160 / month</span>
-                        <h3>Intensive Ukrainian Course</h3>
+                            alt="Intensive Ukrainian Course" class="country__image">
+                        <span class="course__price">$160 / month</span>
+                        <h3 class="course__title">Intensive Ukrainian Course</h3>
                         <p>Do you need to learn Ukrainian at a sufficient level quickly? In a small group with
                             intensive classes, you can do it!</p>
-                        <img src="img/language/lessons-icon.svg" alt="Lessons Icon" width="20">
-                        <span>20 Lessons</span>
-                        <img src="img/language/students-icon.svg" alt="Students Icon" width="20">
-                        <span>12 Students</span>
-                        <a href="contacts.html">Enrol now</a>
+                        <div class="icon-container">
+                            <img src="img/language/lessons-icon.svg" alt="Lessons Icon" class="language_icons">
+                            <span>20 Lessons</span>
+                            <img src="img/language/students-icon.svg" alt="Students Icon" class="language_icons">
+                            <span>12 Students</span>
+                        </div>
+                        <a href="contacts.html" class="custom-btn page-link">Enrol now</a>
                     </article>
                 </div>
-                <div class="language__cards-tab">
+                <div class="language__cards-tab hidden">
                     <article class="language__cards-item">
-                        <img src="img/language/french/french-for-beginners.png" alt="French for Beginners">
-                        <span>$120 / month</span>
-                        <h3>French for Beginners</h3>
+                        <img src="img/language/french/french-for-beginners.png" alt="French for Beginners"
+                            class="country__image">
+                        <span class="course__price">$120 / month</span>
+                        <h3 class="course__title">French for Beginners</h3>
                         <p>Take the first steps in learning French with our school, online or offline. We offer
                             interactive learning with experienced teachers.</p>
-                        <img src="img/language/lessons-icon.svg" alt="Lessons Icon" width="20">
-                        <span>25 Lessons</span>
-                        <img src="img/language/students-icon.svg" alt="Students Icon" width="20">
-                        <span>20 Students</span>
-                        <a href="contacts.html">Enrol now</a>
+                        <div class="icon-container">
+                            <img src="img/language/lessons-icon.svg" alt="Lessons Icon" class="language_icons">
+                            <span>25 Lessons</span>
+                            <img src="img/language/students-icon.svg" alt="Students Icon" class="language_icons">
+                            <span>20 Students</span>
+                        </div>
+                        <a href="contacts.html" class="custom-btn page-link">Enrol now</a>
                     </article>
                     <article class="language__cards-item">
-                        <img src="img/language/french/french-intermediate-level.png" alt="French Intermediate Level">
-                        <span>$140 / month</span>
-                        <h3>Intermediate Level</h3>
+                        <img src="img/language/french/french-intermediate-level.png" alt="French Intermediate Level"
+                            class="country__image">
+                        <span class="course__price">$140 / month</span>
+                        <h3 class="course__title">Intermediate Level</h3>
                         <p>Ready to continue learning the language of love and literature? In this course, we will dive
                             deeper into French grammar.</p>
-                        <img src="img/language/lessons-icon.svg" alt="Lessons Icon" width="20">
-                        <span>20 Lessons</span>
-                        <img src="img/language/students-icon.svg" alt="Students Icon" width="20">
-                        <span>20 Students</span>
-                        <a href="contacts.html">Enrol now</a>
+                        <div class="icon-container">
+                            <img src="img/language/lessons-icon.svg" alt="Lessons Icon" class="language_icons">
+                            <span>20 Lessons</span>
+                            <img src="img/language/students-icon.svg" alt="Students Icon" class="language_icons">
+                            <span>20 Students</span>
+                        </div>
+                        <a href="contacts.html" class="custom-btn page-link">Enrol now</a>
                     </article>
                     <article class="language__cards-item">
-                        <img src="img/language/french/intensive-french-course.png" alt="Intensive French Course">
-                        <span>$160 / month</span>
-                        <h3>Intensive French Course</h3>
+                        <img src="img/language/french/intensive-french-course.png" alt="Intensive French Course"
+                            class="country__image">
+                        <span class="course__price">$160 / month</span>
+                        <h3 class="course__title">Intensive French Course</h3>
                         <p>We offer intensive courses to quickly master basic grammar, proper spelling, and
                             conversational French.</p>
-                        <img src="img/language/lessons-icon.svg" alt="Lessons Icon" width="20">
-                        <span>26 Lessons</span>
-                        <img src="img/language/students-icon.svg" alt="Students Icon" width="20">
-                        <span>12 Students</span>
-                        <a href="contacts.html">Enrol now</a>
+                        <div class="icon-container">
+                            <img src="img/language/lessons-icon.svg" alt="Lessons Icon" class="language_icons">
+                            <span>26 Lessons</span>
+                            <img src="img/language/students-icon.svg" alt="Students Icon" class="language_icons">
+                            <span>12 Students</span>
+                        </div>
+                        <a href="contacts.html" class="custom-btn page-link">Enrol now</a>
                     </article>
                 </div>
-                <div class="language__cards-tab">
+                <div class="language__cards-tab hidden">
                     <article class="language__cards-item">
-                        <img src="img/language/spanish/spanish-for-beginners.png" alt="Spanish for Beginners">
-                        <span>$120 / month</span>
-                        <h3>Spanish for Beginners</h3>
+                        <img src="img/language/spanish/spanish-for-beginners.png" alt="Spanish for Beginners"
+                            class="country__image">
+                        <span class="course__price">$120 / month</span>
+                        <h3 class="course__title">Spanish for Beginners</h3>
                         <p>Spanish is spoken in 22 countries. Do you want to master this language? This course will be a
                             good start!</p>
-                        <img src="img/language/lessons-icon.svg" alt="Lessons Icon" width="20">
-                        <span>26 Lessons</span>
-                        <img src="img/language/students-icon.svg" alt="Students Icon" width="20">
-                        <span>20 Students</span>
-                        <a href="contacts.html">Enrol now</a>
+                        <div class="icon-container">
+                            <img src="img/language/lessons-icon.svg" alt="Lessons Icon" class="language_icons">
+                            <span>26 Lessons</span>
+                            <img src="img/language/students-icon.svg" alt="Students Icon" class="language_icons">
+                            <span>20 Students</span>
+                        </div>
+                        <a href="contacts.html" class="custom-btn page-link">Enrol now</a>
                     </article>
                     <article class="language__cards-item">
-                        <img src="img/language/spanish/spanish-intermediate-course.png"
-                            alt="Spanish Intermediate Level">
-                        <span>$140 / month</span>
-                        <h3>Intermediate Level</h3>
+                        <img src="img/language/spanish/spanish-intermediate-course.png" alt="Spanish Intermediate Level"
+                            class="country__image">
+                        <span class="course__price">$140 / month</span>
+                        <h3 class="course__title">Intermediate Level</h3>
                         <p>Continue learning one of the most popular languages in the world with certified teachers at
                             LinguaNow!</p>
-                        <img src="img/language/lessons-icon.svg" alt="Lessons Icon" width="20">
-                        <span>16 Lessons</span>
-                        <img src="img/language/students-icon.svg" alt="Students Icon" width="20">
-                        <span>15 Students</span>
-                        <a href="contacts.html">Enrol now</a>
+                        <div class="icon-container">
+                            <img src="img/language/lessons-icon.svg" alt="Lessons Icon" class="language_icons">
+                            <span>16 Lessons</span>
+                            <img src="img/language/students-icon.svg" alt="Students Icon" class="language_icons">
+                            <span>15 Students</span>
+                        </div>
+                        <a href="contacts.html" class="custom-btn page-link">Enrol now</a>
                     </article>
                     <article class="language__cards-item">
-                        <img src="img/language/spanish/intensive-spanish-course.png" alt="Intensive Spanish Course">
-                        <span>$160 / month</span>
-                        <h3>Intensive Spanish Course</h3>
+                        <img src="img/language/spanish/intensive-spanish-course.png" alt="Intensive Spanish Course"
+                            class="country__image">
+                        <span class="course__price">$160 / month</span>
+                        <h3 class="course__title">Intensive Spanish Course</h3>
                         <p>If you are limited in time and want to learn Spanish at least at an intermediate level
                             quickly, we offer you our intensive course.</p>
-                        <img src="img/language/lessons-icon.svg" alt="Lessons Icon" width="20">
-                        <span>26 Lessons</span>
-                        <img src="img/language/students-icon.svg" alt="Students Icon" width="20">
-                        <span>12 Students</span>
-                        <a href="contacts.html">Enrol now</a>
+                        <div class="icon-container">
+                            <img src="img/language/lessons-icon.svg" alt="Lessons Icon" class="language_icons">
+                            <span>26 Lessons</span>
+                            <img src="img/language/students-icon.svg" alt="Students Icon" class="language_icons">
+                            <span>12 Students</span>
+                        </div>
+                        <a href="contacts.html" class="custom-btn page-link">Enrol now</a>
                     </article>
                 </div>
-                <div class="language__cards-tab">
+                <div class="language__cards-tab hidden">
                     <article class="language__cards-item">
-                        <img src="img/language/chinese/chinese-for-beginners.png" alt="Chinese for Beginners">
-                        <span>$120 / month</span>
-                        <h3>Chinese for Beginners</h3>
+                        <img src="img/language/chinese/chinese-for-beginners.png" alt="Chinese for Beginners"
+                            class="country__image">
+                        <span class="course__price">$120 / month</span>
+                        <h3 class="course__title">Chinese for Beginners</h3>
                         <p>China is one of the world's superpowers, both financially and culturally. Now is the perfect
                             time to start learning Chinese.</p>
-                        <img src="img/language/lessons-icon.svg" alt="Lessons Icon" width="20">
-                        <span>26 Lessons</span>
-                        <img src="img/language/students-icon.svg" alt="Students Icon" width="20">
-                        <span>15 Students</span>
-                        <a href="contacts.html">Enrol now</a>
+                        <div class="icon-container">
+                            <img src="img/language/lessons-icon.svg" alt="Lessons Icon" class="language_icons">
+                            <span>26 Lessons</span>
+                            <img src="img/language/students-icon.svg" alt="Students Icon" class="language_icons">
+                            <span>15 Students</span>
+                        </div>
+                        <a href="contacts.html" class="custom-btn page-link">Enrol now</a>
                     </article>
                     <article class="language__cards-item">
-                        <img src="img/language/chinese/chinese-intermediate-level.png" alt="Chinese Intermediate Level">
-                        <span>$140 / month</span>
-                        <h3>Intermediate Level</h3>
+                        <img src="img/language/chinese/chinese-intermediate-level.png" alt="Chinese Intermediate Level"
+                            class="country__image">
+                        <span class="course__price">$140 / month</span>
+                        <h3 class="course__title">Intermediate Level</h3>
                         <p>Do you want to continue learning Chinese and explore Chinese traditions and culture? The
                             intermediate course is waiting!</p>
-                        <img src="img/language/lessons-icon.svg" alt="Lessons Icon" width="20">
-                        <span>20 Lessons</span>
-                        <img src="img/language/students-icon.svg" alt="Students Icon" width="20">
-                        <span>15 Students</span>
-                        <a href="contacts.html">Enrol now</a>
+                        <div class="icon-container">
+                            <img src="img/language/lessons-icon.svg" alt="Lessons Icon" class="language_icons">
+                            <span>20 Lessons</span>
+                            <img src="img/language/students-icon.svg" alt="Students Icon" class="language_icons">
+                            <span>15 Students</span>
+                        </div>
+                        <a href="contacts.html" class="custom-btn page-link">Enrol now</a>
                     </article>
                     <article class="language__cards-item">
-                        <img src="img/language/chinese/intensive-chinese-course.png" alt="Intensive Chinese Course">
-                        <span>$160 / month</span>
-                        <h3>Intensive Chinese Course</h3>
+                        <img src="img/language/chinese/intensive-chinese-course.png" alt="Intensive Chinese Course"
+                            class="country__image">
+                        <span class="course__price">$160 / month</span>
+                        <h3 class="course__title">Intensive Chinese Course</h3>
                         <p>This course is designed primarily for those who want to master the language quickly and are
                             ready for several lessons per week.</p>
-                        <img src="img/language/lessons-icon.svg" alt="Lessons Icon" width="20">
-                        <span>16 Lessons</span>
-                        <img src="img/language/students-icon.svg" alt="Students Icon" width="20">
-                        <span>10 Students</span>
-                        <a href="contacts.html">Enrol now</a>
+                        <div class="icon-container">
+                            <img src="img/language/lessons-icon.svg" alt="Lessons Icon" class="language_icons">
+                            <span>16 Lessons</span>
+                            <img src="img/language/students-icon.svg" alt="Students Icon" class="language_icons">
+                            <span>10 Students</span>
+                        </div>
+                        <a href="contacts.html" class="custom-btn page-link">Enrol now</a>
                     </article>
                 </div>
-                <div class="language__cards-tab">
+                <div class="language__cards-tab hidden">
                     <article class="language__cards-item">
-                        <img src="img/language/english/english-for-beginners.png" alt="English for Beginners">
-                        <span>$120 / month</span>
-                        <h3>English for Beginners</h3>
+                        <img src="img/language/english/english-for-beginners.png" alt="English for Beginners"
+                            class="country__image">
+                        <span class="course__price">$120 / month</span>
+                        <h3 class="course__title">English for Beginners</h3>
                         <p>English can be definitely called the main language of the whole world. Ready to start
                             learning it?</p>
-                        <img src="img/language/lessons-icon.svg" alt="Lessons Icon" width="20">
-                        <span>26 Lessons</span>
-                        <img src="img/language/students-icon.svg" alt="Students Icon" width="20">
-                        <span>20 Students</span>
-                        <a href="contacts.html">Enrol now</a>
+                        <div class="icon-container">
+                            <img src="img/language/lessons-icon.svg" alt="Lessons Icon" class="language_icons">
+                            <span>26 Lessons</span>
+                            <img src="img/language/students-icon.svg" alt="Students Icon" class="language_icons">
+                            <span>20 Students</span>
+                        </div>
+                        <a href="contacts.html" class="custom-btn page-link">Enrol now</a>
                     </article>
                     <article class="language__cards-item">
-                        <img src="img/language/english/english-intermediate-course.png"
-                            alt="English Intermediate Level">
-                        <span>$140 / month</span>
-                        <h3>Intermediate Level</h3>
+                        <img src="img/language/english/english-intermediate-course.png" alt="English Intermediate Level"
+                            class="country__image">
+                        <span class="course__price">$140 / month</span>
+                        <h3 class="course__title">Intermediate Level</h3>
                         <p>Let's dive a little deeper into English grammar and explore the differences between British
                             and American English.</p>
-                        <img src="img/language/lessons-icon.svg" alt="Lessons Icon" width="20">
-                        <span>20 Lessons</span>
-                        <img src="img/language/students-icon.svg" alt="Students Icon" width="20">
-                        <span>20 Students</span>
-                        <a href="contacts.html">Enrol now</a>
+                        <div class="icon-container">
+                            <img src="img/language/lessons-icon.svg" alt="Lessons Icon" class="language_icons">
+                            <span>20 Lessons</span>
+                            <img src="img/language/students-icon.svg" alt="Students Icon" class="language_icons">
+                            <span>20 Students</span>
+                        </div>
+                        <a href="contacts.html" class="custom-btn page-link">Enrol now</a>
                     </article>
                     <article class="language__cards-item">
-                        <img src="img/language/english/intensive-english-course.png" alt="Intensive English Course">
-                        <span>$160 / month</span>
-                        <h3>Intensive English Course</h3>
+                        <img src="img/language/english/intensive-english-course.png" alt="Intensive English Course"
+                            class="country__image">
+                        <span class="course__price">$160 / month</span>
+                        <h3 class="course__title">Intensive English Course</h3>
                         <p>Don't have much time but need to learn English as soon as possible? We offer an intensive
                             course for that!</p>
-                        <img src="img/language/lessons-icon.svg" alt="Lessons Icon" width="20">
-                        <span>16 Lessons</span>
-                        <img src="img/language/students-icon.svg" alt="Students Icon" width="20">
-                        <span>10 Students</span>
-                        <a href="contacts.html">Enrol now</a>
+                        <div class="icon-container">
+                            <img src="img/language/lessons-icon.svg" alt="Lessons Icon" class="language_icons">
+                            <span>16 Lessons</span>
+                            <img src="img/language/students-icon.svg" alt="Students Icon" class="language_icons">
+                            <span>10 Students</span>
+                        </div>
+                        <a href="contacts.html" class="custom-btn page-link">Enrol now</a>
                     </article>
                 </div>
             </div>

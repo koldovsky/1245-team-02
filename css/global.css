@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 
 :root {
@@ -25,6 +26,9 @@
     --paragraph-color: #80838b;
     --text-color: #858585;
     --heading-color: #393b42;
+    --btn-bg-gradient: #8b9dc3;
+    --btn-hover-color: #2d4373;
+    --btn-hover-gradient: #7a89a7;
 }
 
 h1 {

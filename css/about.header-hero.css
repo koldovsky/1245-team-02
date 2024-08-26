@@ -3,26 +3,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #3E5496;
+    background: #3e5496;
     padding-top: 50px;
     padding-bottom: 60px;
-}
-
-.header__hero h1 {
+  }
+  
+  .header__hero h1 {
     color: #fff;
     font-size: 50px;
     font-weight: 700;
-}
-
-.header__hero nav a {
+  }
+  
+  .header__hero nav a {
     text-decoration: none;
     color: #fff;
-}
-
-.header__hero nav span {
+  }
+  
+  .header__hero nav span {
     color: #fff;
-}
-
-.header__hero nav a span {
-    color: #00C5B5;
-}
+  }
+  
+  .header__hero nav a span {
+    color: #00c5b5;
+  }
+  
