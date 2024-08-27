@@ -1,147 +1,208 @@
 .translation-interpreting {
-    padding: 0;
-    margin: 0;
-    width: 100%;
+    padding: 0; /* Видаляє внутрішні відступи */
+    margin: 0; /* Видаляє зовнішні відступи */
+    width: 100%; /* Встановлює ширину на 100% від батьківського контейнера */
 }
 
 .translation-interpreting-header {
-    text-align: center;
-    background-color: var(--brand-color);
-    padding: 50px 0 60px 0;
-    box-sizing: border-box;
-    
+    text-align: center; /* Центрує текст всередині */
+    background-color: var(--brand-color); /* Встановлює фоновий колір з змінної */
+    padding: 50px 0 60px 0; /* Встановлює вертикальні відступи */
+    box-sizing: border-box; /* Включає padding і border в загальний розмір елемента */
 }
 
 .translation-interpreting-title {
-    font-family: "Poppins", sans-serif;
-    font-size: 38px;
-    color: var(--white);
-    margin: 0;
-    font-weight: 700;
-    box-sizing: border-box;
-    padding-left: 10px;
-    line-height: 1.2;
-    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif; /* Встановлює шрифт для заголовка */
+    font-size: 38px; /* Встановлює розмір шрифту */
+    color: var(--white); /* Встановлює колір тексту на білий */
+    margin: 0; /* Видаляє відступи */
+    font-weight: 700; /* Встановлює товщину шрифту на жирний */
+    box-sizing: border-box; /* Включає padding і border в загальний розмір */
+    padding-left: 10px; /* Встановлює відступ зліва */
+    line-height: 1.2; /* Встановлює висоту рядка */
+    margin-bottom: 20px; /* Встановлює відступ знизу */
 }
 
 .translation-interpreting-breadcrumb {
-    color: var(--white);
-    font-size: 14px;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    white-space: normal;
+    color: var(--white); /* Встановлює колір тексту на білий */
+    font-size: 14px; /* Встановлює розмір шрифту */
+    margin: 0; /* Видаляє відступи */
+    font-family: 'Open Sans', sans-serif; /* Встановлює шрифт */
 }
 
 .translation-interpreting-breadcrumb-page {
-    color: var(--accent-color);
-    font-size: 14px;
+    color: var(--accent-color); /* Встановлює колір тексту на акцентний */
 }
 
 .translation-interpreting-body {
-    padding: 90px 0 60px 0;
+    padding: 90px 0 60px 0; /* Встановлює вертикальні відступи */
 }
 
 .translation-interpreting-photo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1200px;
+    position: relative; /* Встановлює позицію як відносну */
+    display: flex; /* Використовує flexbox для розташування елементів */
+    flex-direction: column; /* Розташовує елементи по вертикалі */
+    align-items: center; /* Центрує елементи по горизонталі */
+    margin: 0 auto; /* Центрує контейнер горизонтально */
+    max-width: 1200px; /* Встановлює максимальну ширину */
+    padding: 70px 15px 0 15px; /* Встановлює відступи всередині */
 }
 
-.translation-interpreting-image { 
-    padding: 90px 15px 0 15px;
+.container {
+    position: relative; /* Встановлює позицію як відносну */
+    width: 100%; /* Встановлює ширину на 100% */
+    max-width: 1200px; /* Встановлює максимальну ширину */
+    margin: 0 auto; /* Центрує контейнер горизонтально */
+    overflow: hidden; /* Приховує все, що виходить за межі контейнера */
+}
+
+.translation-interpreting-image {
+    position: relative; /* Встановлює позицію як відносну */
+    width: 100%; /* Встановлює ширину на 100% */
+    height: 0; /* Встановлює висоту в 0 */
+    padding-top: 56.25%; /* Зберігає співвідношення сторін 16:9 */
+    overflow: hidden; /* Приховує все, що виходить за межі контейнера */
+}
+
+.translation-interpreting-image img {
+    position: absolute; /* Встановлює позицію як абсолютну */
+    top: 0; /* Встановлює верхній відступ */
+    left: 0; /* Встановлює лівий відступ */
+    width: 100%; /* Встановлює ширину на 100% */
+    height: 100%; /* Встановлює висоту на 100% */
+    object-fit: cover; /* Вміщує зображення в контейнер без деформації */
+    transition: opacity 0.5s ease-in-out; /* Плавний перехід для opacity */
+}
+
+.translation-interpreting__btn-prev,
+.translation-interpreting__btn-next {
+    position: absolute; /* Встановлює позицію як абсолютну */
+    background: rgba(255, 255, 255, 0.5); /* Напівпрозорий фон для кращої видимості */
+    border: none; /* Видаляє обводку */
+    cursor: pointer; /* Змінює курсор на вказівник */
+    width: 30px; /* Встановлює ширину кнопок */
+    height: 30px; /* Встановлює висоту кнопок */
+    padding: 0; /* Видаляє внутрішні відступи */
+    color: var(--dark-shade-color); /* Встановлює колір тексту або іконки */
+    font-size: 20px; /* Встановлює розмір тексту або іконки */
+    text-align: center; /* Центрує текст або іконку */
+    line-height: 40px; /* Центрує текст або іконку по вертикалі */
+    top: 50%; /* Встановлює вертикальне розташування */
+    transform: translateY(-50%); /* Центрує кнопки по вертикалі */
+    z-index: 10; /* Забезпечує, що кнопки поверх інших елементів */
+}
+
+.translation-interpreting__btn-prev {
+    left: 10px; /* Встановлює відступ зліва */
+    top: 65%; /* Вертикальне розташування */
+}
+
+.translation-interpreting__btn-next {
+    right: 10px; /* Встановлює відступ справа */
+    top: 65%; /* Вертикальне розташування */
 }
 
 .translation-interpreting-icon-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    gap: 10px;
-    margin-top: 20px;
-    padding-left: 25px;
-    font-size: 17px;
+    display: flex; /* Використовує flexbox для розташування елементів */
+    flex-wrap: wrap; /* Дозволяє обгортання елементів */
+    justify-content: left; /* Вирівнює елементи по лівому краю */
+    gap: 10px; /* Встановлює відстань між елементами */
+    margin-top: 20px; /* Встановлює верхній відступ */
+    padding-left: 25px; /* Встановлює лівий відступ */
+    font-size: 17px; /* Встановлює розмір шрифту */
 }
 
 .translation-interpreting-icon-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    white-space: normal;
+    display: flex; /* Використовує flexbox для розташування елементів */
+    align-items: center; /* Центрує елементи по вертикалі */
+    margin-bottom: 10px; /* Встановлює відступ знизу */
+    white-space: normal; /* Дозволяє переноси тексту */
 }
 
 .translation-interpreting-icon {
-    height: 24px;
-    width: 20px;
-    margin-right: 10px;
+    height: 24px; /* Встановлює висоту іконки */
+    width: 20px; /* Встановлює ширину іконки */
+    margin-right: 10px; /* Встановлює відступ справа */
 }
 
 .translation-interpreting-icon-text {
-    font-size: 17px;
-    color: var(--dark-shade-color);
+    font-size: 17px; /* Встановлює розмір шрифту */
+    color: var(--dark-shade-color); /* Встановлює колір тексту */
 }
 
 .translation-interpreting-text {
-    margin: 20px auto;
+    margin: 20px auto; /* Встановлює вертикальні відступи і центрує текст горизонтально */
 }
 
 .translation-interpreting-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    flex-direction: column;
+    display: flex; /* Використовує flexbox для розташування елементів */
+    flex-wrap: wrap; /* Дозволяє обгортання елементів */
+    gap: 20px; /* Встановлює відстань між елементами */
+    justify-content: center; /* Центрує елементи */
+    flex-direction: column; /* Розташовує елементи по вертикалі */
 }
 
 .translation-interpreting-column {
-    flex: 1;
-    max-width: 600px;
-    padding: 10px;
-    width: 100%;
-    color: var(--base-text-color);
-    margin-left: 13px;
-    
+    flex: 1; /* Дозволяє елементам розтягуватись */
+    max-width: 600px; /* Встановлює максимальну ширину */
+    padding: 10px; /* Встановлює внутрішні відступи */
+    width: 100%; /* Встановлює ширину на 100% */
+    color: var(--base-text-color); /* Встановлює колір тексту */
+    margin-left: 13px; /* Встановлює лівий відступ */
 }
 
 .translation-interpreting-paragraph {
-    font-size: 17px;
-    line-height: 1.6;
-    font-weight: 350;
+    font-size: 17px; /* Встановлює розмір шрифту */
+    line-height: 1.6; /* Встановлює висоту рядка */
+    font-weight: 350; /* Встановлює товщину шрифту */
 }
 
 @media (min-width: 768px) {
-    .translation-interpreting-title{
-        font-size: 44px;
+    .translation-interpreting-title {
+        font-size: 44px; /* Збільшує розмір шрифту заголовка */
+    }
+    .translation-interpreting__btn-prev {
+        top: 60%; /* Встановлює вертикальне розташування кнопки попереднього */
+    }
+    .translation-interpreting__btn-next {
+        top: 60%; /* Встановлює вертикальне розташування кнопки наступного */
     }
     .translation-interpreting-grid {
-        flex-direction: row;
+        flex-direction: row; /* Розташовує елементи по горизонталі */
     }
+    .translation-interpreting-column {
+        max-width: 421px; /* Зменшує максимальну ширину */
+    }
+}
 
+@media (min-width: 852px) {
     .translation-interpreting-column {
-        max-width: 421px;
-    }
-}
-@media (min-width: 992px){
-    .translation-interpreting-title{
-        font-size: 50px;
-    }
-}
-@media (min-width: 1200px) {
-    .translation-interpreting-icon-list{
-        justify-content: center;
+        flex: 1; /* Дозволяє елементам розтягуватись */
+        max-width: 600px; /* Встановлює максимальну ширину */
+        padding: 10px; /* Встановлює внутрішні відступи */
+        width: 150%; /* Встановлює ширину на 150% */
+        color: var(--base-text-color); /* Встановлює колір тексту */
+        margin-left: 13px; /* Встановлює лівий відступ */
     }
     .translation-interpreting-grid {
-        gap: 0;
+        gap: 0; /* Відсутність відстані між елементами */
     }
-    .translation-interpreting-column {
-        flex: 1;
-        max-width: 600px;
-        padding: 10px;
-        width: 150%;
-        color: var(--base-text-color);
-        margin-left: 13px;
+}
+
+@media (min-width: 992px) {
+    .translation-interpreting-title {
+        font-size: 50px; /* Збільшує розмір шрифту заголовка */
+    }
+}
+
+@media (min-width: 1200px) {
+    .translation-interpreting-icon-list {
+        justify-content: center; /* Центрує іконки */
+    }
+    .translation-interpreting-grid {
+        gap: 0; /* Відсутність відстані між елементами */
     }
     .translation-interpreting-paragraph {
-        font-size: 16px;
+        font-size: 16px; /* Зменшує розмір шрифту параграфа */
     }
 }
