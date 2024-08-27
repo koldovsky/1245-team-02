@@ -1,5 +1,5 @@
 .header__hero {
-    background: #3e5496;
+    background: var(--brand-color);
     padding-top: 50px;
     padding-bottom: 60px;
   }
@@ -11,21 +11,21 @@
     justify-content: center;
   }
   .header__hero h1 {
-    color: #fff;
+    color: var(--white);
     font-size: 50px;
     font-weight: 700;
   }
   
   .header__hero nav a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
   }
   
   .header__hero nav span {
-    color: #fff;
+    color: var(--white);
   }
   
   .header__hero nav a span {
-    color: #00c5b5;
+    color: var(--accent-color);
   }
   

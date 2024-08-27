@@ -55,7 +55,7 @@
   }
   
   .header__menu-link:hover {
-    color: #fff;
+    color: var(--white);
     transition: 0.2s;
   }
   
@@ -78,11 +78,11 @@
   }
   
   .header__phone-image {
-    color: #00c5b5;
+    color: var(--accent-color);
   }
   
   .header__phone-number {
-    color: #ffff;
+    color: var(--white);
     font-size: 15px;
     text-decoration: none;
   }
@@ -122,7 +122,7 @@
       left: 0;
       right: 0;
       width: 100vw;
-      background: #3e5496;
+      background: var(--brand-color);
       transition: 0.5s;
       overflow: hidden;
       z-index: 1;

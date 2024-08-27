@@ -67,15 +67,15 @@
 }
 
 .header__hero-elements h1 {
-  color: #ffff;
+  color: var(--white);
 }
 
 .header__hero-elements span {
-  color: #00c5b5;
+  color: var(--accent-color);
 }
 
 .header__hero-elements p {
-  color: #ffff;
+  color: var(--white);
   font-size: 19px;
   padding-top: 15px;
 }
@@ -114,16 +114,16 @@
   width: 208px;
   padding: 18px 0;
   text-align: center;
-  background: #00c5b5;
-  color: #fff;
+  background: var(--accent-color);
+  color: var(--white);
   font-size: 14px;
   border-radius: 10px;
   text-decoration: none;
 }
 
 .header__contacts-link:hover {
-  background: #fff;
-  color: #393b42;
+  background: var(--white);
+  color: var(--primary-dark-color);
   transition: 0.5s;
 }
 
@@ -134,7 +134,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
 }
 
