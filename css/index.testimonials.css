@@ -81,36 +81,10 @@
     margin-top: 20px;
     margin-bottom: 30px;
 }
-.carousel__button-icon {
-    position: absolute;
-    width: 36px;
-    height: 48px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    border: none;
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: block;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-
-}
-.carousel__button--left {
-    left: 12px;
-}
-
-.carousel__button--right {
-    right: 12px;
-}
 .testimonials__media {
     box-sizing: border-box;
     display: flex;
     padding: 30px 15px 20px 20px;
-    /*
-    padding: 0 15px;*/
 }
 
 .media__content{
@@ -177,4 +151,74 @@
 }
 .media-last{
     padding-bottom: 100px;
+}
+@media (min-width: 768px) {
+    .testimonials__content {
+        padding: 100px 32px 15px 32px;
+    }
+
+    .testimonials__title {
+        font-size: 2.75rem;
+    }
+    .testimonials__footer{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 32px 85px 32px ;
+    }
+    .testimonials__media{
+        width: 50%;
+        padding: 13px 0 20px 0;
+    }
+    .media__value {
+        font-size: 22px;
+    }
+    .testimonials__image-tutors, .testimonials__image-courses, .testimonials__image-graduated, .testimonials__image-experience {
+        width: 70px;
+        height: 70px;
+    }
+    .media__icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (min-width: 1024px){
+    .testimonials__footer {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 15px 150px 90px;
+    }
+    .testimonials__title {
+        font-size: 3.13rem;
+    }
+    .student__image {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+    }
+    .student__name-text {
+        font-size: 1.32rem;
+    }
+    .student__decorator img {
+        width: 45px;
+    }
+    .student__course{
+        font-size: 15px;
+
+    }
+    .testimonials__image-tutors, .testimonials__image-experience, .testimonials__image-graduated, .testimonials__image-courses {
+        margin: 0 15px;
+    }
+    .testimonials__content {
+       margin: 0 120px;
+    }
+    .media__value{
+        font-size: 26px;
+    }
+    .media__content {
+        justify-content: space-between;
+        width: 60%;
+    }
+    .student__date{
+        margin-bottom: 50px;
+    }
 }
