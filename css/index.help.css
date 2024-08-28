@@ -9,6 +9,7 @@
     max-width: 100%;
     display: flex;
     flex-direction: column;
+    line-height: 25.5px
 }
 
 .help__header {
@@ -60,6 +61,10 @@
     width: 186.016px;
     text-align: center;
     height: 53.02px;
+    transition: all 0.2s ease-in;
+}
+.help__button:hover {
+    background-color: var(--accent-color);
 }
 
 .help__link {
@@ -68,11 +73,6 @@
     font-weight: 700;
     color: var(--white);
     text-decoration: none;
-    max-width: 100%;
-}
-
-.help__link:hover {
-    text-decoration: underline;
 }
 
 .help__img {
@@ -102,7 +102,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: 85% center;
+        object-position: 80% center;
     }
 }
 
