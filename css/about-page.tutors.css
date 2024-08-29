@@ -1,0 +1,150 @@
+.tutors {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.tutors__container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tutors__header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tutors__title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--primary-dark-color);
+  margin-bottom: 10px;
+  line-height: 45.6px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  .dot {
+      color: var(--brand-color);
+  }
+  
+}
+
+.tutors__description {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  line-height: 28.5px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--paragraph-color);
+  justify-content: center;
+  text-align: center;
+}
+
+.tutors__carousel {
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.tutor-card {
+  flex: 0 0 auto;
+  width: 242px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: center;
+  text-align: center;
+}
+
+.tutor-card__name{
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--heading-color);
+  font-weight: 600;
+  line-height: 28.6px;
+  justify-content: center;
+  text-align: center;
+}
+
+.tutor-card__role{
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--brand-color);
+  font-weight: 700;
+  line-height: 22.4px;
+  justify-content: center;
+  text-align: center;
+}
+
+.tutor-card__description{
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--base-text-color);
+  font-weight: 400;
+  line-height: 25.5px;
+  justify-content: center;
+  text-align: center;
+}
+
+.tutor-card img {
+  width: 100%;
+  font-weight: 400;
+  height: auto;
+  justify-content: center;
+}
+
+.tutors__carousel-controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: all;
+  position: absolute;
+  top: 50%;
+}
+
+.tutors__carousel-controls button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: var(--white);
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  pointer-events: all;
+}
+
+.tutors__carousel-controls .prev {
+  margin-left: 1rem;
+}
+
+.tutors__carousel-controls .next {
+  margin-right: 1rem;
+}
+
+/* Стилі для екранів ширше 600px */
+@media (min-width: 767px) {
+  .tutors__carousel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Стилі для екранів ширше 990px */
+@media (min-width: 991px) {
+  .tutors__carousel {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

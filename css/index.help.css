@@ -6,10 +6,10 @@
 .help__container {
     padding: 90px 30px;
     background-color: var(--brand-color);
-    max-width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
-    line-height: 25.5px
+    line-height: 25.5px;
 }
 
 .help__header {
