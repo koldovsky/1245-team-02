@@ -102,6 +102,7 @@ width: 570px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .offer__image-size {
