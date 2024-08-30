@@ -177,7 +177,7 @@
     }
 
     #check:checked ~ .hamburger span:nth-child(3) {
-      left: -50%;
+      left: -51%;
       opacity: 0;
     }
 
@@ -187,7 +187,7 @@
     }
 
     #check:checked ~ .hamburger span:nth-child(5) {
-      left: 5px;
+      left: 4px;
       top: 10px;
     }
 
@@ -243,7 +243,7 @@
     }
   
     .header__phone {
-      display: none;
+      padding-top: 25px;
     }
   }
 

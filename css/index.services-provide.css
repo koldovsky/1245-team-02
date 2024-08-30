@@ -5,12 +5,27 @@
   background: var(--light-accent-color);
 }
 
+@media only screen and (min-width: 320px) and (max-width: 601px) {
+  .services {
+    padding-top: 90px;
+  padding-bottom: 90px;
+  }
+}
+
+@media only screen and (min-width: 602px) and (max-width: 991px) {
+  .services {
+    padding-top: 100px;
+  padding-bottom: 105px;
+  }
+}
+
 .services__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
+  text-align: center;
 }
 
 .services__container h2 {
