@@ -1,0 +1,56 @@
+.we__offer {
+    background: url('../img/we-offer-back.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.we__offer-size {
+    margin-top: 280px;
+    margin-bottom: 300px;
+    margin-left: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: solid;
+}
+
+.we__offer-text {
+    width: 570px;
+}
+
+.we__offer-text h2  {
+    color: var(--heading-color);
+    line-height: 1.2;  
+}
+
+.we__offer-text h2 span {
+    color: var(--small-dot-color);  
+}
+
+.we__offer-text p {
+    color: var(--paragraph-color);  
+    font-size: 19px;
+    padding-top: 10px;
+}
+
+.vvvff{
+    width: 150px;
+    height: 150px;
+    color: #DFF4FF;
+}
+
+ 
