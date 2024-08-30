@@ -55,7 +55,6 @@
 
 .header__hero-elements {
   width: 570px;
-  border: solid;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 601px) {
