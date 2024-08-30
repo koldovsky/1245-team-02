@@ -97,8 +97,15 @@
     gap: 30px;
   }
   
+  #check {
+    display: none;
+  } 
+
   @media only screen and (max-width: 992px) {
     .hamburger {
+      width: 30px;
+      height: 15px;
+      position: relative;
       display: block;
       cursor: pointer;
       z-index: 2;
@@ -108,12 +115,91 @@
       z-index: 2;
     }
   
-    .hamburger .line {
-      width: 30px;
+    .hamburger span {
+      display: inline-block;
+      width: 50%;
       height: 3px;
+      border-radius: 4px;
       background: #fefefe;
-      margin: 6px 0;
+      position: absolute;
+      left: 0;
+      opacity: 1;
+      transform: rotate(0);
+      transition: all 0.5s ease-in-out;
     }
+
+    .hamburger span:nth-child(1),
+    .hamburger span:nth-child(2){
+      transform-origin: center;
+      top: 0;
+    }
+
+    .hamburger span:nth-child(3),
+    .hamburger span:nth-child(4){
+      transform-origin: center;
+      top: 10px;
+    }
+
+    .hamburger span:nth-child(5),
+    .hamburger span:nth-child(6){
+      transform-origin: center;
+      top: 20px;
+    }
+
+    .hamburger span:nth-child(even) {
+      left: 50%;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .hamburger span:nth-child(odd) {
+      left: 0;
+      border-radius: 4px 0 0 4px;
+    }
+
+    #check:checked ~ .hamburger span:nth-child(1),
+    #check:checked ~ .hamburger span:nth-child(6) {
+      transform: rotate(45deg);
+    }
+
+    #check:checked ~ .hamburger span:nth-child(2),
+    #check:checked ~ .hamburger span:nth-child(5) {
+      transform: rotate(-45deg);
+    }
+
+    #check:checked ~ .hamburger span:nth-child(1) {
+      left: 4px;
+      top: 1px;
+    }
+
+    #check:checked ~ .hamburger span:nth-child(2) {
+      left: calc(50% - 2px);
+      top: 1px;
+    }
+
+    #check:checked ~ .hamburger span:nth-child(3) {
+      left: -50%;
+      opacity: 0;
+    }
+
+    #check:checked ~ .hamburger span:nth-child(4) {
+      left: 100%;
+      opacity: 0;
+    }
+
+    #check:checked ~ .hamburger span:nth-child(5) {
+      left: 5px;
+      top: 10px;
+    }
+
+    #check:checked ~ .hamburger span:nth-child(6) {
+      left: calc(50% - 2px);
+      top: 10px;
+    }
+
+    #check {
+      display: none;
+    }
+
   
     .header__nav-bar {
       height: 0;
