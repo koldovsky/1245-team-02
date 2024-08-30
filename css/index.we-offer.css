@@ -1,7 +1,7 @@
 .we__offer {
     background: url('../img/we-offer-back.png');
     background-size: cover;
-    background-position: center;
+    background-position: 80% 20%;
     display: flex;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@
     overflow-x: hidden;
 
     background-repeat: no-repeat;
-    background-position: center center;
+    
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -20,17 +20,64 @@
 .we__offer-size {
     margin-top: 280px;
     margin-bottom: 300px;
-    margin-left: 155px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    border: solid;
+    flex-direction: row;
+    gap: 10px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 650px) {
+    .we__offer-size {
+        flex-direction: column;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+  }
+
+  @media only screen and (min-width: 650px) and (max-width: 1100px) {
+    .we__offer-size {
+        flex-direction: column;
+        margin-top: 210px;
+        margin-bottom: 250px;
+    }
+  }
+
 .we__offer-text {
-    width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+text-align: start;
+width: 570px;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 470px) {
+    .we__offer-text {
+        width: 320px;
+    }
+  }
+
+  @media only screen and (min-width: 470px) and (max-width: 773px) {
+    .we__offer-text {
+        width: 465px;
+    }
+  }
+
+  @media only screen and (min-width: 773px) and (max-width: 991px) {
+    .we__offer-text {
+        width: 630px;
+    }
+  }
+
+  @media only screen and (min-width: 991px) and (max-width: 1100px) {
+    .we__offer-text {
+        width: 730px;
+    }
+  }
+
+  @media only screen and (min-width: 1100px) and (max-width: 1210px) {
+    .we__offer-text {
+        width: 450px;
+    }
+  }
 
 .we__offer-text h2  {
     color: var(--heading-color);
@@ -44,13 +91,38 @@
 .we__offer-text p {
     color: var(--paragraph-color);  
     font-size: 19px;
-    padding-top: 10px;
 }
 
-.vvvff{
-    width: 150px;
-    height: 150px;
-    color: #DFF4FF;
+.we__offer-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #DFF4FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
+.offer__image-size {
+    width: 60px;
+    height: 60px;
+    color: #65c5f9;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 477px) {
+    .we__offer-image {
+        width: 80px;
+        height: 80px;
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 477px) {
+    .offer__image-size {
+        width: 40px;
+    height: 40px;
+    }
+  }
 
  
