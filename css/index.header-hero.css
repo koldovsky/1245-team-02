@@ -55,6 +55,7 @@
 
 .header__hero-elements {
   width: 570px;
+  border: solid;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 601px) {
@@ -98,6 +99,13 @@
 @media only screen and (min-width: 320px) and (max-width: 601px) {
   .header__hero-positionsLinks {
     padding-left: 15px;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1265px) {
+  .header__hero-positionsLinks {
+    padding-left: 20px;
     justify-content: flex-start;
   }
 }
