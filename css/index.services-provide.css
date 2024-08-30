@@ -95,7 +95,7 @@
   }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 320px) {
   .services__carousel .services__container-white {
     width: calc(100%);
   }
