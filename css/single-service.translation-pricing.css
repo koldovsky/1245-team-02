@@ -1,4 +1,6 @@
 .translation-pricing {
+    margin-top: 60px;
+    margin-bottom: 60px;
     .section__title-wrapper {
         text-align: center;
         .title {
@@ -77,6 +79,11 @@
                             font-weight: 600;                            
                         }
                     }
+                    .description {
+                        color: var(--base-text-color);
+                        font-weight: 300;
+                        font-size: 17px;
+                    }
                 }
             }
         }
@@ -90,6 +97,8 @@
 
 @media (min-width: 768px) {
     .translation-pricing {
+        margin-top: 80px;
+        margin-bottom: 80px;
         .tabs-wrapper {
             .tabs__labels {
                 justify-content: center;
