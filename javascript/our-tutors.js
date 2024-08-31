@@ -9,9 +9,9 @@ if (!prevButton || !nextButton || !carousel || cards.length === 0) {
   let index = 0;
 
   function updateCarousel() {
-    const cardWidth = cards[0].offsetWidth; // Ширина одной карточки
-    const carouselWidth = carousel.offsetWidth; // Ширина карусели
-    const visibleCards = Math.floor(carouselWidth / cardWidth); // Количество видимых карточек
+    const cardWidth = cards[0].offsetWidth;
+    const carouselWidth = carousel.offsetWidth;
+    const visibleCards = Math.floor(carouselWidth / cardWidth);
 
     console.log('cardWidth:', cardWidth);
     console.log('carouselWidth:', carouselWidth);
@@ -25,8 +25,7 @@ if (!prevButton || !nextButton || !carousel || cards.length === 0) {
     prevButton.disabled = index === 0;
     nextButton.disabled = index >= cards.length - visibleCards;
   }
-
-  // Обработчик события для кнопки "Предыдущая"
+  
   prevButton.addEventListener('click', () => {
     if (index > 0) {
       index--;
@@ -34,9 +33,8 @@ if (!prevButton || !nextButton || !carousel || cards.length === 0) {
     }
   });
 
-  // Обработчик события для кнопки "Следующая"
   nextButton.addEventListener('click', () => {
-    const cardWidth = cards[0].offsetWidth; // Переместите определение сюда
+    const cardWidth = cards[0].offsetWidth;
     const carouselWidth = carousel.offsetWidth;
     const visibleCards = Math.floor(carouselWidth / cardWidth);
 
@@ -46,6 +44,5 @@ if (!prevButton || !nextButton || !carousel || cards.length === 0) {
     }
   });
 
-  // Первоначальное обновление карусели
   updateCarousel();
 }
