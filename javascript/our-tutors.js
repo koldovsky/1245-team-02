@@ -1,21 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('DOM fully loaded and parsed');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+const carousel = document.querySelector('.tutors__carousel');
+const cards = document.querySelectorAll('.tutor-card');
 
-  const prevButton = document.querySelector('.prev');
-  const nextButton = document.querySelector('.next');
-  const carousel = document.querySelector('.tutors__carousel');
-  const cards = document.querySelectorAll('.tutor-card');
-  
-  console.log('prevButton:', prevButton);
-  console.log('nextButton:', nextButton);
-  console.log('carousel:', carousel);
-  console.log('cards:', cards);
-
-  if (!prevButton || !nextButton || !carousel || cards.length === 0) {
-    console.error('Не удалось найти один или несколько элементов. Проверьте селекторы.');
-    return;
-  }
-
+if (!prevButton || !nextButton || !carousel || cards.length === 0) {
+  console.error('Не удалось найти один или несколько элементов. Проверьте селекторы.');
+} else {
   let index = 0;
 
   function updateCarousel() {
@@ -36,17 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
     nextButton.disabled = index >= cards.length - visibleCards;
   }
 
+  // Обработчик события для кнопки "Предыдущая"
   prevButton.addEventListener('click', () => {
-    console.log('Prev button clicked');
     if (index > 0) {
       index--;
       updateCarousel();
     }
   });
 
+  // Обработчик события для кнопки "Следующая"
   nextButton.addEventListener('click', () => {
-    console.log('Next button clicked');
-    const cardWidth = cards[0].offsetWidth;
+    const cardWidth = cards[0].offsetWidth; // Переместите определение сюда
     const carouselWidth = carousel.offsetWidth;
     const visibleCards = Math.floor(carouselWidth / cardWidth);
 
@@ -56,5 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Первоначальное обновление карусели
   updateCarousel();
-});
+}
