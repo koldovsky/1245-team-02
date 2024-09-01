@@ -61,7 +61,7 @@
 
 .tutor-card {
   flex: 0 0 auto;
-  width: calc(100% - 1rem); /* Full width minus gap */
+  width: calc(100% - 1rem);
   box-sizing: border-box;
   padding: 0 15px;
   text-align: center;
@@ -74,8 +74,8 @@
 .tutor-card img {
   width: 100%;
   max-height: 320px;
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure images cover the area */
+  height: auto;
+  object-fit: cover;
 }
 
 .tutor-card__name {
@@ -126,11 +126,11 @@
 
 @media (min-width: 768px) and (max-width: 990px) {
   .tutors__carousel {
-    width: calc(50% * 2 + 0.5rem); /* Исправлено: уменьшили отступ */
+    width: calc(50% * 2 + 0.5rem);
   }
 
   .tutor-card {
-    width: calc(50% - 0.25rem); /* Исправлено: уменьшили отступ */
+    width: calc(50% - 0.25rem);
     min-height: 400px;
   }
 }
@@ -138,11 +138,11 @@
 /* Desktop view (>= 991px) */
 @media (min-width: 991px) {
   .tutors__carousel {
-    width: calc(33.33% * 3 + 2rem); /* Show 3 cards with gaps */
+    width: calc(33.33% * 3 + 2rem);
   }
 
   .tutor-card {
-    width: calc(33.33% - 0.67rem); /* 33.33% width minus margin */
-    min-height: 400px; /* Ensures minimum height */
+    width: calc(33.33% - 0.67rem);
+    min-height: 400px;
   }
 }
