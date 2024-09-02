@@ -6,6 +6,7 @@
     background: var(--brand-color);
     padding-top: 50px;
     padding-bottom: 60px;
+    text-align: center;
   }
   
   .header__hero h1 {
@@ -27,3 +28,10 @@
     color: var(--accent-color);
   }
   
+
+
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    .header__hero h1 {
+      font-size: 45px;
+    }
+  }

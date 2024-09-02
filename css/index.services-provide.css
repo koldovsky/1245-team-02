@@ -63,26 +63,26 @@
 
 @media only screen and (min-width: 320px) and (max-width: 650px) {
   .services__wrapper {
-    max-width: 390px;
+    max-width: 300px;
     margin-left: 15px;
   }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 780px) {
   .services__wrapper {
-    max-width: 580px;
+    max-width: 630px;
     margin-left: 5px;
   }
 }
 
-@media only screen and (min-width: 780px) and (max-width: 950px) {
+@media only screen and (min-width: 780px) and (max-width: 850px) {
   .services__wrapper {
     max-width: 680px;
     margin-left: 10px;
   }
 }
 
-@media only screen and (min-width: 950px) and (max-width: 1015px) {
+@media only screen and (min-width: 850px) and (max-width: 1015px) {
   .services__wrapper {
     max-width: 780px;
     margin-left: 15px;
@@ -126,6 +126,24 @@
   right: -23px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .services__wrapper i {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .services__wrapper i:first-child {
+    left: 5px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .services__wrapper i:last-child {
+    right: 8px;
+  }
+}
+
 
 .services__wrapper .services__carousel {
     display: flex;
@@ -146,9 +164,17 @@
 
 .services__carousel .services__container-white {
   height: 370px;
+  border-radius: 0 25px 0 0;
   object-fit: cover;
   margin-left: 14px;
   width: calc(100% / 3);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .services__carousel .services__container-white {
+    height: 290px;
+    border-radius: 10px;
+  }
 }
 
 .services__carousel .services__container-white:first-child{
@@ -177,12 +203,24 @@
     flex-direction: column;
    
   }
+
+  @media only screen and (min-width: 320px) and (max-width: 700px) {
+    .services__container-white {
+      padding: 25px 35px;
+    }
+  }
   
   .services__container-size--element {
     width: 330px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 700px) {
+    .services__container-size--element {
+      width: 250px;
+    }
   }
 
   .services__image-container--one {
@@ -254,6 +292,24 @@
   .services__container-size--element a {
     font-size: 17px;
     color: #00c5b5;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 700px) {
+    .services__container-size--element h3 {
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 700px) {
+    .services__container-size--element p {
+      font-size: 13px;
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 700px) {
+    .services__container-size--element a {
+      font-size: 13px;
+    }
   }
 
 
