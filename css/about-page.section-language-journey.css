@@ -1,9 +1,7 @@
 .language-start {
     background-image: url("../img/about-page.section-language-journey/background-image.png");
-    background-color: rgb(0, 197, 181);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 .background-image {
     position: absolute;
@@ -15,8 +13,9 @@
     z-index: 0;
     border-radius: inherit;
 }
+
 .language-start-content{
-    padding: 140px 0px;
+    padding: 140px 0 45px;
     margin: 0 25px;
     color: white;
 }
@@ -27,6 +26,9 @@
     font-size: 2.375rem;
     line-height: 47px;
 }
+.language-start__title-accent{
+    color: #3e5496;
+}
 .language-start__paragraph{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.185rem;
@@ -36,7 +38,7 @@
 .language-start__paragraph__text{
     font-size: 1.06rem;
     margin-bottom: 30px;
-    font-weight: 500;
+    font-weight: 450;
     line-height: 25px
 }
 .language-start__icon{
@@ -47,5 +49,78 @@
     font-size: 1.375rem;
     font-family: 'Poppins', sans-serif;
 }
-
+.language-start__steps{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.language-start__step{
+    display: flex;
+    margin-bottom: 30px;
+}
+.language-start__step_content{
+    display: inline;
+    width: 65%;
+    margin-left: 15px;
+}
+.language-start__step-text{
+    font-size: 1.06rem;
+    text-align: left;
+    font-weight: 400;
+    color: #f8f8f8;
+    line-height: 25.5px;
+}
+.language-start__step-title{
+    text-align: left;
+    font-weight: 600;
+    line-height: 28px;
+}
+@media (min-width: 768px){
+    .language-start{
+        background-position: center;
+    }
+    .language-start-content{
+        margin-left: 52%;
+        padding-top: 100px;
+    }
+    .language-start__title{
+        font-size: 2.75rem;
+        font-weight: 700;
+        line-height: 53px;
+    }
+    .language-start__step-title{
+        font-size: 1.5rem;
+    }
+    .language-start__step-text{
+        font-weight: 400;
+        margin-right: 0;
+    }
+    .language-start__step_content{
+        width: 75%;
+    }
+}
+@media (min-width: 1024px){
+    .language-start__title{
+        font-size: 3.125rem;
+        font-weight: 700;
+        line-height: 60px;
+    }
+    .language-start__paragraph__text{
+        font-weight: 400;
+        margin-right: 120px;
+    }
+    .language-start__step-title{
+        font-size: 1.625rem;
+        padding-bottom: 7.5px;
+    }
+    .language-start__steps{
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .language-start-content{
+        margin-left: 51%;
+        padding-top: 100px;
+    }
+}
 
