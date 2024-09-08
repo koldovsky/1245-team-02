@@ -29,6 +29,10 @@
     --btn-bg-gradient: #8b9dc3;
     --btn-hover-color: #2d4373;
     --btn-hover-gradient: #7a89a7;
+    --fixed-price-offer-color : #80838B;
+    --price-accent-purple-color: #a5a3ef;
+    --price-accent-orange-color: #ffb83c;
+    --price-accent-turquoise-color: #00c5b5;
 }
 
 h1 {
