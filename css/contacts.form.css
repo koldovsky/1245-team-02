@@ -43,6 +43,8 @@
 }
 
 .contacts__form-submit-btn {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
     width: 100%;
     margin-top: 56px;
     height: 41px;
@@ -62,9 +64,16 @@
     line-height: 1.33;
 }
 
+.contacts__form-submit-btn:hover {
+    background-color: var(--brand-color);
+}
+
+.contacts__form-submit-btn:active {
+    background-color: var(--primary-dark-color);
+}
+
 .contacts__form-submit-btn-content {
     display: flex;
-    position: relative;
     max-width: 100%;
     word-wrap: break-word;
     justify-content: center;
@@ -77,6 +86,10 @@
     justify-content: center;
     align-items: center;
     color: var(--white);
+}
+
+.contacts__form-text.hide {
+    display: none;
 }
 
 
@@ -253,3 +266,176 @@
     font-weight: 400;
 }
 
+
+
+.form__popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 9990;
+    transition: display .5s ease-out;
+}
+
+.form__popup.show {
+    display: flex;
+}
+
+.form__popup-overlay {
+    background-color: #ffffff;
+    opacity: 0.5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9990;
+    transition: opacity .5s ease-out;
+}
+
+.form__popup-content {
+    background-color: #ffffff;
+    position: relative;
+    min-width: 344px;
+    margin: 0 auto;
+    padding: 43px 32px 65px;
+    border-radius: 3px;
+    z-index: 9999;
+}
+
+
+.form__popup-close-btn {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 16px;
+    right: 24px;
+    padding: 4px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease-out;
+    cursor: pointer;
+}
+
+.form__popup-close-btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background-color: var(--ui-dark-shade-color, #212736);
+    transform: rotate(-45deg);
+}
+
+.form__popup-close-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background-color: var(--ui-dark-shade-color, #212736);
+    transform: rotate(45deg);
+}
+
+.form__popup-message {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form__popup-success-icon {
+    display: flex;
+    width: 34px;
+    height: 34px;
+    margin: 0 auto 33px;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-color);
+}
+
+.form__popup-success-icon svg {
+    height: 100%;
+    width: 100%;
+    fill: currentColor;
+}
+
+
+.form__popup-title {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form__popup-text {
+    margin-bottom: 42px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form__popup-btn {
+    background-color: var(--brand-color);
+    width: 210px;
+    border-radius: 8px;
+    box-shadow: none;
+    z-index: 9998;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+    line-height: 36px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
+ 
+
+ @-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.load {
+    display: none;
+    position: absolute;
+    bottom: 21%;
+	width: 25px;
+    height: 25px;
+    margin: 110px auto 0;
+    border: solid 2.5px #ffffff;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    -webkit-transition: all 0.5s ease-in;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 1.0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    transition: all 0.5s ease-in;
+    animation-name: rotate;
+    animation-duration: 1.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.load.show {
+    display: block;
+}
