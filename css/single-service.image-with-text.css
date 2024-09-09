@@ -30,6 +30,11 @@
     font-family: 'Open Sans', sans-serif; /* Встановлює шрифт */
 }
 
+.breadcrumb-home{
+    color: white;
+    text-decoration: none;
+}
+
 .translation-interpreting-breadcrumb-page {
     color: var(--accent-color); /* Встановлює колір тексту на акцентний */
 }
@@ -77,11 +82,11 @@
 .translation-interpreting__btn-prev,
 .translation-interpreting__btn-next {
     position: absolute; /* Встановлює позицію як абсолютну */
-    background: rgba(255, 255, 255, 0.5); /* Напівпрозорий фон для кращої видимості */
+    background: transparent; /* Напівпрозорий фон для кращої видимості */
     border: none; /* Видаляє обводку */
     cursor: pointer; /* Змінює курсор на вказівник */
     width: 30px; /* Встановлює ширину кнопок */
-    height: 30px; /* Встановлює висоту кнопок */
+    height: 100%; /* Встановлює висоту кнопок */
     padding: 0; /* Видаляє внутрішні відступи */
     color: var(--dark-shade-color); /* Встановлює колір тексту або іконки */
     font-size: 20px; /* Встановлює розмір тексту або іконки */
