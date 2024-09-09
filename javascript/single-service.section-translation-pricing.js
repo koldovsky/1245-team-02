@@ -1,7 +1,10 @@
 document.querySelector(".tabs__labels").addEventListener("click", function (e){
     const tabLabel = e.target.closest(".tab__label");
     const tabsLabels = document.querySelectorAll(".tab__label");
-    tabsLabels.forEach((tab) => tab.classList.remove("tab__label--active"));
+    tabsLabels.forEach((tab) => {
+        tab.classList.remove("tab__label--active");
+        tab.classList.add("tab__label--disable");
+    });
     tabLabel.classList.remove("tab__label--disable");
     tabLabel.classList.add("tab__label--active");
 
