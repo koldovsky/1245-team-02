@@ -31,7 +31,54 @@
     color: var(--text-color);
     font-size: 17px;
     line-height: 1.5;
-    margin-top: 25px;
+    margin: 25px 0;
+}
+
+.fixed-price__courses-carousel {
+    display: grid;
+}
+
+.courses-carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.courses-carousel__viewport {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.courses-carousel__prev,
+.courses-carousel__next {
+    background-color: var(--btn-bg-gradient);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-radius: 100px;
+    color: var(--white);
+}
+
+.courses-carousel__prev {
+    left: 0;
+}
+
+.courses-carousel__next {
+    right: 0;
 }
 
 .courses-carousel__slides-wrapper {
@@ -181,6 +228,15 @@
     width: 100%;
 }
 
-@media(min-width: 800px) {}
+@media(min-width: 678px) {
+    .fixed-price {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
 
-@media(min-width: 900px) {}
+    .fixed-price__intro,
+    .fixed-price__courses-carousel {
+        flex: 1 1 50%;
+    }
+}
