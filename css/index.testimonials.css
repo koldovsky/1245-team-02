@@ -24,14 +24,39 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
-.carousel {
-    position: relative;
+.testimonials .carousel {
+   position: relative;
     display: flex;
     align-items: center;
     margin-top: 45px;
     background-color: white;
     margin-left: 14px;
     margin-right: 14px;
+    overflow: hidden;
+    /*height: 700px;*/
+}
+.testimonials .carousel__items {
+    display: flex;
+    width: 100%;
+    /*position: absolute;*/
+    left: 0;
+    transition: 0.5s ease-in-out all;
+    background: #f8f8f8;
+}
+.testimonials .carousel__item {
+    min-width: 100%;
+    background: white;
+}
+.testimonials .carousel__button {
+    z-index: 10;
+    position: absolute;
+    top: 50%
+}
+.testimonials .carousel__button.carousel__button--right {
+    right: -3px;
+}
+.testimonials .carousel__button.carousel__button--left {
+    left: -3px;
 }
 .student__info {
     padding: 0 40px;
@@ -64,16 +89,18 @@
     font-size: 14px;
     font-weight:bold;
     box-sizing: border-box;
+    line-height: 23.8px;
 }
 .student__feedback{
     font-family: 'Open Sans', sans-serif;
     color:rgb(133, 133, 133);
-    font-size: 17px;
+    font-size: 16px;
     font-style: italic;
     font-weight:400;
     margin-top: 25px;
+    line-height: 25.5px;
 }
-.student__date{
+.student__date {
     font-family: 'Open Sans', sans-serif;
     color: #393B42;
     font-size: 14px;
@@ -152,9 +179,18 @@
 .media-last{
     padding-bottom: 100px;
 }
+.carousel__button-icon{
+    width: 12px;
+    height: 19px;
+    display: inline;
+}
 @media (min-width: 768px) {
     .testimonials__content {
         padding: 100px 32px 15px 32px;
+    }
+    .testimonials .carousel__item {
+        min-width: 47%;
+        margin: 0 1.5%;
     }
 
     .testimonials__title {
@@ -179,6 +215,17 @@
     .media__icon {
         width: 40px;
         height: 40px;
+    }
+    .carousel__button-icon{
+        width: 25px;
+        height: 25px;
+        display: inline;
+    }
+    .testimonials .carousel__button.carousel__button--right {
+        right: -4px
+    }
+    .testimonials .carousel__button.carousel__button--left {
+        left: -4px;
     }
 }
 @media (min-width: 1024px){

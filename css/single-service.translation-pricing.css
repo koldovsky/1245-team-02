@@ -109,7 +109,7 @@
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-rows: repeat(3, 1fr);
                     column-gap: 30px;
-                    row-gap: 40px;                   
+                    row-gap: 30px;                   
                 }
             }
         }

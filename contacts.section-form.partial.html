@@ -1,9 +1,24 @@
 <section class="contacts">
+  <div class="form__popup">
+    <div class="form__popup-overlay"></div>
+    <div class="form__popup-content">
+      <span class="form__popup-close-btn"></span>
+      <div class="form__popup-message">
+        <span class="form__popup-success-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 32"><g><path d="M18.32 32c-1.51 0-2.93-.62-3.997-1.746-.43-.455-.43-1.19 0-1.645.43-.455 1.128-.455 1.558 0 .653.686 1.52 1.065 2.44 1.065.92 0 1.787-.38 2.438-1.066l19.03-20.077c.652-.687 1.01-1.6 1.01-2.572 0-.97-.358-1.885-1.01-2.572-1.344-1.418-3.532-1.418-4.876 0L24.31 14.573c-.43.454-1.13.454-1.56 0-.43-.454-.43-1.19 0-1.644L33.354 1.743c2.204-2.325 5.79-2.325 7.994 0 2.204 2.325 2.204 6.108 0 8.433l-19.03 20.077C21.25 31.38 19.83 32 18.32 32z"></path><path fill-opacity=".359" d="M24 26.134l-3.295 3.44c-1.82 1.9-4.77 1.9-6.59 0L2.365 17.307c-1.82-1.9-1.82-4.98 0-6.88 1.82-1.9 4.77-1.9 6.59 0L24 26.133z"></path><path d="M18.053 32c-1.592 0-3.088-.645-4.214-1.817L1.742 17.59c-2.324-2.42-2.324-6.354 0-8.773C2.868 7.645 4.365 7 5.957 7c1.592 0 3.088.645 4.213 1.817L25.66 24.94c.453.473.453 1.24 0 1.712l-3.393 3.53C21.142 31.356 19.645 32 18.053 32zM5.957 9.42c-.97 0-1.884.393-2.57 1.108-1.42 1.475-1.42 3.876 0 5.352l12.096 12.592c.686.715 1.6 1.11 2.57 1.11.97 0 1.884-.395 2.57-1.11l2.572-2.676L8.527 10.528c-.686-.715-1.6-1.11-2.57-1.11z"></path></g></svg>
+        </span>
+        <span class="form__popup-title">Thank you!</span>
+        <span class="form__popup-text">We will contact you shortly.</span>
+        <span class="form__popup-btn">Ok</span>
+      </div>
+    </div>
+  </div>
   <div class="contacts__container container">
     <div class="contacts__form">
       <form class="contacts__form-container">
         <div class="contacts__form-field">
           <input
+            id="full-name"
             class="contacts__form-input"
             type="text"
             placeholder="Full name*"
@@ -12,6 +27,7 @@
         </div>
         <div class="contacts__form-field">
           <input
+            id="phone-number"
             class="contacts__form-input"
             type="tel"
             placeholder="Phone number*"
@@ -20,6 +36,7 @@
         </div>
         <div class="contacts__form-field">
           <input
+            id="email"
             class="contacts__form-input"
             type="email"
             placeholder="E-mail*"
@@ -27,7 +44,7 @@
           />
         </div>
         <div class="contacts__form-field">
-          <select class="contacts__form-select" required>
+          <select id="language" class="contacts__form-select" required>
             <option value="" disabled selected>Language*</option>
             <option value="ukraine">Ukrainian</option>
             <option value="french">French</option>
@@ -37,7 +54,7 @@
           </select>
         </div>
         <div class="contacts__form-field">
-          <select class="contacts__form-select" required>
+          <select id="course" class="contacts__form-select" required>
             <option value="" disabled selected>Course*</option>
             <option value="beginner">Beginner</option>
             <option value="intermediate">Intermediate</option>
@@ -47,6 +64,8 @@
         <button class="contacts__form-submit-btn" type="submit">
           <span class="contacts__form-submit-btn-content">
             <span class="contacts__form-text">Send</span>
+
+            <div class="load"></div>
           </span>
         </button>
       </form>
@@ -54,58 +73,72 @@
 
     <div class="contacts__faq">
       <div class="contacts__faq-container">
-        <h2 class="contacts__faq-title">Still Have Questions<span class="question-mark">?</span></h2>
+        <h2 class="contacts__faq-title">
+          Still Have Questions<span class="question-mark">?</span>
+        </h2>
         <p class="contacts__faq-subtitle">
-          Are you interested in one of our courses? Fill out the form, and we will
-          contact you shortly. If you have any questions, contact us in any
+          Are you interested in one of our courses? Fill out the form, and we
+          will contact you shortly. If you have any questions, contact us in any
           convenient way or see the section below.
         </p>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <div class="contacts__accordion-container">
+          <div class="contacts__accordion-item">
+            <h2 class="contacts__accordion-header">
+              <span class="contacts__accordion-button">
                 Do you provide online or offline courses?
-              </button>
+              </span>
+              <span class="contacts__accordion-icon"></span>
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">We offer both options. You can enrol in online courses from
+            <div class="contacts__accordion-collapse">
+              <div class="contacts__accordion-body">
+                We offer both options. You can enrol in online courses from
                 anywhere in the world. If you are in Berlin, you can attend
-                offline classes in our cozy office.</div>
+                offline classes in our cozy office.
+              </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <div class="contacts__accordion-item">
+            <h2 class="contacts__accordion-header">
+              <span class="contacts__accordion-button">
                 What languages do you teach?
-              </button>
+              </span>
+              <span class="contacts__accordion-icon"></span>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">We currently offer courses in five languages: English, French,
-                Spanish, Chinese, and Ukrainian.</div>
+            <div class="contacts__accordion-collapse">
+              <div class="contacts__accordion-body">
+                We currently offer courses in five languages: English, French,
+                Spanish, Chinese, and Ukrainian.
+              </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <div class="contacts__accordion-item">
+            <h2 class="contacts__accordion-header">
+              <span class="contacts__accordion-button">
                 Do you have individual lessons?
-              </button>
+              </span>
+              <span class="contacts__accordion-icon"></span>
             </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Yes, we offer one-on-one private lessons in the chosen language
+            <div class="contacts__accordion-collapse">
+              <div class="contacts__accordion-body">
+                Yes, we offer one-on-one private lessons in the chosen language
                 with a teacher. Contact us to find out more about available
-                options, tutors, and prices for individual lessons.</div>
+                options, tutors, and prices for individual lessons.
+              </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          <div class="contacts__accordion-item">
+            <h2 class="contacts__accordion-header">
+              <span class="contacts__accordion-button">
                 What are intensive courses?
-              </button>
+              </span>
+              <span class="contacts__accordion-icon"></span>
             </h2>
-            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">An intensive language course consists of 10-20 lessons, which take
-                place 3-4 times a week. Thanks to this, you immerse yourself in
-                the language and quickly master the basic knowledge.</div>
+            <div class="contacts__accordion-collapse">
+              <div class="contacts__accordion-body">
+                An intensive language course consists of 10-20 lessons, which
+                take place 3-4 times a week. Thanks to this, you immerse
+                yourself in the language and quickly master the basic knowledge.
+              </div>
             </div>
           </div>
         </div>
