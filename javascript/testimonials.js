@@ -1,17 +1,10 @@
-const slides = document.querySelector(".testimonials .carousel__items");
-const slidesCount = slides.childElementCount;
-const maxLeft = (slidesCount - 1) * 100 * -1;
-
-let current = 0;
-
 function changeSlide(next = true) {
+    const slides = document.querySelector(".testimonials .carousel__items");
     if (next) {
-        current += current > maxLeft ? -100 : current * -1;
+        slides.append(slides.firstElementChild);
     } else {
-        current = current < 0 ? current + 100 : maxLeft;
+        slides.prepend(slides.lastElementChild);
     }
-
-    slides.style.left = current + "%";
 }
 
 // Controls
